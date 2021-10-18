@@ -3,15 +3,16 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-    fontFamily: {
+      fontFamily: {
         'poppins': ['poppins', 'sans-serif'],
-        'raleway': ['raleway','sans-serif'],
+        'raleway': ['raleway', 'sans-serif'],
       }
-},
-  variants: {
-    extend: {},
-  },
-  plugins: [
+    },
+    variants: {
+      extend: {},
+    },
+    plugins: [
       require('daisyui'),
-],
+    ],
+  }
 }
