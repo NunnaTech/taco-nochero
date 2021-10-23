@@ -2,7 +2,6 @@ import React from "react";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 import { FcGoogle } from "react-icons/fc";
-import ImgLogin from "../../assets/img/login.jpg";
 
 export default function Login() {
     return (
@@ -59,7 +58,7 @@ export default function Login() {
                 <div
                     className="w-full h-20 md:h-full row-start-1 md:row-start-auto rounded-lg"
                     style={{
-                        background: `url(${ImgLogin})`,
+                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47)`,
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
