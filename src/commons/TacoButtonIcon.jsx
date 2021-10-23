@@ -2,6 +2,7 @@ import React from "react";
 
 export default function TacoButtonIcon({
     bgColor,
+    moreClasses,
     callBack,
     Icon,
     disabled = false,
@@ -12,7 +13,7 @@ export default function TacoButtonIcon({
     const cursor = disabled
         ? "cursor-not-allowed"
         : `cursor-pointer active:bg-nochero-${bgColor + 1}`;
-    const theClass = `btn-nochero-icon bg-nochero-${bgColor} ${textColor} ${cursor}`;
+    const theClass = `btn-nochero-icon bg-nochero-${bgColor} ${textColor} ${cursor} ${moreClasses}`;
     return (
         <button
             type="button"
