@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 .btn-nochero {
-    @apply w-full px-10 py-2 text-base rounded-lg inline-flex justify-center place-items-center my-1 mx-2;
+    @apply w-full px-10 py-2 text-base rounded-lg inline-flex justify-center place-items-center;
 }
 
 .btn-nochero-icon {
-    @apply w-10 h-10 rounded-full inline-flex justify-center place-items-center my-1 mx-2;
+    @apply w-10 h-10 rounded-full inline-flex justify-center place-items-center;
 }
 
 .txt-nochero {
-    @apply w-full px-2 py-2 text-base rounded-lg my-1 mx-2 border-2;
+    @apply w-full px-2 py-2 text-base rounded-lg border-2;
 }
 
-.h1-nochero{
-    @apply text-3xl md:text-4xl font-bold
+.h1-nochero {
+    @apply text-3xl md:text-4xl font-bold;
 }
 
-.h2-nochero{
-    @apply text-2xl md:text-3xl font-bold
+.h2-nochero {
+    @apply text-2xl md:text-3xl font-bold;
 }
 
-.h3-nochero{
-    @apply text-xl md:text-2xl font-bold
+.h3-nochero {
+    @apply text-xl md:text-2xl font-bold;
 }
 
-.p-nochero{
-    @apply text-base
+.p-nochero {
+    @apply text-base text-justify;
 }

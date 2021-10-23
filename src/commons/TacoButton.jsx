@@ -22,7 +22,7 @@ export default function TacoButton({
             onClick={callBack}
             disabled={disabled}
         >
-            <Icon />
+            {Icon && <Icon />}
             <span className="ml-2">{text}</span>
         </button>
     );
