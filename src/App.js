@@ -6,9 +6,14 @@ import TacoInput from "./commons/TacoInput";
 
 function App() {
     return (
-        <div className="grid grid-cols-2 m-5">
-            <div className="">
-                <h1 className="text-4xl font-bold">Botones</h1>
+        <div className="grid grid-cols-2 bg-white">
+            <div className="m-5">
+                <h1 className="h1-nochero">Títulos h1</h1>
+                <h2 className="h2-nochero">Títulos h2</h2>
+                <h2 className="h3-nochero">Títulos h3</h2>
+                <p className="p-nochero">
+                    Esto es párrafo normal, donde puedo ingresar texto
+                </p>
                 <TacoButton
                     bgColor="100"
                     Icon={() => <MdAccountBalance />}
@@ -44,8 +49,6 @@ function App() {
                     callBack={() => console.log("función")}
                     text="Acción"
                 />
-
-                <h1 className="text-2xl font-bold">Solo iconos</h1>
 
                 <TacoButtonIcon
                     bgColor="100"
@@ -78,8 +81,7 @@ function App() {
                     callBack={() => console.log("función")}
                 />
             </div>
-            <div>
-                <h1 className="text-4xl font-bold">Cuadros de texto</h1>
+            <div className="m-5">
                 <TacoInput placeholder="Ingresa un texto" type="text" />
                 <TacoInput
                     placeholder="Ingresa un texto"
