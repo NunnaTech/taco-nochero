@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function TacoInput({
+    id,
     placeholder,
     moreClasses,
     disabled = false,
@@ -15,6 +16,7 @@ export default function TacoInput({
     const myClass = `txt-nochero ${stroke} ${moreClasses}`;
     return (
         <input
+            id={id}
             className={myClass}
             type={type}
             placeholder={placeholder}
