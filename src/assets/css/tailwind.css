@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-nochero {
+    @apply w-full px-10 py-3 rounded-lg uppercase inline-flex justify-center place-items-center my-1 mx-2;
+}
+
+.btn-nochero-icon {
+    @apply w-10 h-10 rounded-full inline-flex justify-center place-items-center my-1 mx-2;
+}
+
+.txt-nochero {
+    @apply w-full px-10 py-3 rounded-lg my-1 mx-2 border-2;
+}
