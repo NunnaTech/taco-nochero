@@ -11,16 +11,13 @@ function App() {
                 <h1 className="text-4xl font-bold">Botones</h1>
                 <TacoButton
                     bgColor="100"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     text="Acción"
-                    disabled
                 />
 
                 <TacoButton
                     bgColor="200"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     text="Acción"
@@ -28,7 +25,6 @@ function App() {
 
                 <TacoButton
                     bgColor="300"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     text="Acción"
@@ -37,7 +33,6 @@ function App() {
 
                 <TacoButton
                     bgColor="400"
-                    textColor="text-white"
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     text="Acción"
@@ -45,7 +40,6 @@ function App() {
 
                 <TacoButton
                     bgColor="500"
-                    textColor="text-white"
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     text="Acción"
@@ -55,14 +49,12 @@ function App() {
 
                 <TacoButtonIcon
                     bgColor="100"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                 />
 
                 <TacoButtonIcon
                     bgColor="200"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     disabled
@@ -70,21 +62,18 @@ function App() {
 
                 <TacoButtonIcon
                     bgColor="300"
-                    textColor
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                 />
 
                 <TacoButtonIcon
                     bgColor="400"
-                    textColor="text-white"
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                     disabled
                 />
                 <TacoButtonIcon
                     bgColor="500"
-                    textColor="text-white"
                     Icon={() => <MdAccountBalance />}
                     callBack={() => console.log("función")}
                 />

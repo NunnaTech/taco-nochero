@@ -2,20 +2,27 @@ import React from "react";
 
 export default function TacoButton({
     bgColor,
-    textColor = "text-black",
     text,
     callBack,
     Icon,
     disabled = false,
 }) {
     bgColor = parseInt(bgColor);
+    const textColor = bgColor >= 400 ? "text-white" : "text-black";
     bgColor = disabled ? bgColor + 1 : bgColor;
-    const cursor = disabled ? 'cursor-not-allowed': 'cursor-pointer';
+    const cursor = disabled
+        ? "cursor-not-allowed"
+        : `cursor-pointer active:bg-nochero-${bgColor + 1}`;
     const theClass = `btn-nochero bg-nochero-${bgColor} ${textColor} ${cursor}`;
     return (
-        <button type="button" className={theClass} onClick={callBack} disabled={disabled}>
+        <button
+            type="button"
+            className={theClass}
+            onClick={callBack}
+            disabled={disabled}
+        >
             <Icon />
-            <span className='ml-2'>{text}</span>
+            <span className="ml-2">{text}</span>
         </button>
     );
 }

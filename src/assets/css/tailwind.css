@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-nochero {
-    @apply w-full px-10 py-3 rounded-lg uppercase inline-flex justify-center place-items-center my-1 mx-2;
+    @apply w-full px-10 py-2 text-sm md:text-base rounded-lg uppercase inline-flex justify-center place-items-center my-1 mx-2;
 }
 
 .btn-nochero-icon {
@@ -11,5 +11,5 @@
 }
 
 .txt-nochero {
-    @apply w-full px-10 py-3 rounded-lg my-1 mx-2 border-2;
+    @apply w-full px-2 py-2 text-sm md:text-base rounded-lg my-1 mx-2 border-2;
 }

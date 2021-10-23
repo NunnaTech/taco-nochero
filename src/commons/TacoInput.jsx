@@ -5,7 +5,6 @@ export default function TacoInput({
     disabled = false,
     type,
     state,
-    feedback,
 }) {
     const stroke = state
         ? state === "correct"
@@ -14,14 +13,11 @@ export default function TacoInput({
         : "";
     const myClass = `txt-nochero ${stroke}`;
     return (
-        <>
-            <input
-                className={myClass}
-                type={type}
-                placeholder={placeholder}
-                disabled={disabled}
-            />
-            {feedback&&<span className="ml-2 text-sm">{feedback}</span>}
-        </>
+        <input
+            className={myClass}
+            type={type}
+            placeholder={placeholder}
+            disabled={disabled}
+        />
     );
 }
