@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
-import Menu from './views/landing_pages/Menu'
+import LandingPage from './views/landing_pages/LandingPage'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Menu />
+    < LandingPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
