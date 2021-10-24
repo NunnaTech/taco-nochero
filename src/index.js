@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Register from './views/landing_pages/Register';
+import Menu from './views/landing_pages/Menu'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

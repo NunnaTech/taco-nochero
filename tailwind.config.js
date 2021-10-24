@@ -18,16 +18,16 @@ module.exports = {
                 },
             },
         },
-        fontFamily: {
-            poppins: ["poppins", "sans-serif"],
-            raleway: ["raleway", "sans-serif"],
-        },
-
-        plugins: [require("daisyui")],
     },
     variants: {
         extend: {
             backgroundColor: ["active"],
         },
     },
+    fontFamily: {
+        poppins: ["poppins", "sans-serif"],
+        raleway: ["raleway", "sans-serif"],
+    },
+
+    plugins: [require("daisyui")],
 };
