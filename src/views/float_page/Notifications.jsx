@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdNotifications, MdClose } from "react-icons/md";
 
+// Falta acabar
 export default function Notifications() {
     const [active, setActive] = useState(false);
     return (
