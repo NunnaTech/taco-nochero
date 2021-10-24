@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "../src/assets/css/tailwind.css";
 import Dashboard from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
 
