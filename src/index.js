@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
-import FloatingButtons from './views/FloatingButtons';
+import Dashboard from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FloatingButtons />
+    <Dashboard />
   </React.StrictMode>,
   document.getElementById('root')
 );

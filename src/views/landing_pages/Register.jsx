@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 
 export default function Register() {
     return (
-        <div className="w-full h-screen mx-auto flex justify-center place-items-center">
+        <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
             <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
                 <div
                     className="w-full h-20 md:h-full rounded-lg"

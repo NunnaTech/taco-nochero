@@ -5,10 +5,11 @@ import {
     MdOutlineAttachMoney,
     MdDataExploration,
     MdHomeFilled,
-    MdPerson
+    MdPerson,
 } from "react-icons/md";
 import CardDashboard from "../../commons/CardDashboard";
 import ChartDashboard from "../../commons/ChartDashboard";
+import FloatingButtons from "../float_page/FloatingButtons";
 
 export default function Dashboard() {
     return (
@@ -16,8 +17,8 @@ export default function Dashboard() {
             <div className="flex justify-between place-content-center bg-gray-800 p-2">
                 <div>Logo</div>
                 <div className="inline-flex">
-                    <MdHomeFilled size="30" className="mr-3"/>
-                    <MdPerson size="30"/>
+                    <MdHomeFilled size="30" className="mr-3" />
+                    <MdPerson size="30" />
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
@@ -65,6 +66,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
+            <FloatingButtons />
         </div>
     );
 }
