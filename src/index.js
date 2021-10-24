@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Register from './views/landing_pages/Register';
+import Dashboard from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Register />
+    <Dashboard />
   </React.StrictMode>,
   document.getElementById('root')
 );
