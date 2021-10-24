@@ -3,12 +3,21 @@ import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 import { FcGoogle } from "react-icons/fc";
 
-export default function Login() {
+export default function Register() {
     return (
         <div className="w-full h-screen mx-auto flex justify-center place-items-center">
             <div className="grid flex-col-1 md:grid-cols-2 w-full md:w-2/3">
+                <div
+                    className="w-full h-20 md:h-full rounded-lg"
+                    style={{
+                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47)`,
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                    }}
+                ></div>
                 <div className="bg-white p-5 rounded-lg">
-                    <h1 className="h1-nochero">Iniciar Sesión</h1>
+                    <h1 className="h1-nochero">Registrate</h1>
                     <p className="p-nochero mb-5">
                         ¡Vamos!, inicia sesión para escoger la variedad de
                         alimentos que tenemos para tí.
@@ -55,15 +64,6 @@ export default function Login() {
                         />
                     </div>
                 </div>
-                <div
-                    className="w-full h-20 md:h-full row-start-1 md:row-start-auto rounded-lg"
-                    style={{
-                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47)`,
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                    }}
-                ></div>
             </div>
         </div>
     );
