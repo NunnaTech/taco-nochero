@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Register from './views/landing_pages/Register';
-import Menu from './views/landing_pages/Menu'
+import "../src/assets/css/tailwind.css";
+import Dashboard from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Menu />
+    <Dashboard />
   </React.StrictMode>,
   document.getElementById('root')
 );

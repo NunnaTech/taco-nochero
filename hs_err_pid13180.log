@@ -1,0 +1,227 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb6b5004b3, pid=13180, tid=12096
+#
+# JRE version:  (11.0.11+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.11+9, mixed mode, sharing, tiered, compressed oops, parallel gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1d04b3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xverify:none c:\Users\Jair\.vscode\extensions\redhat.java-1.0.0\server\plugins\org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration c:\Users\Jair\AppData\Roaming\Code\User\globalStorage\redhat.java\1.0.0\config_ss_win -data c:\Users\Jair\AppData\Roaming\Code\User\workspaceStorage\ff4c8f7d1ca046ddf799869dc5761380\redhat.java\ss_ws
+
+Host: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 17763 (10.0.17763.2145)
+Time: Sun Oct 24 09:55:09 2021 Hora de verano central (México) elapsed time: 0.016826 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000020034d5f800):  JavaThread "Unknown thread" [_thread_in_vm, id=12096, stack(0x0000009433200000,0x0000009433300000)]
+
+Stack: [0x0000009433200000,0x0000009433300000],  sp=0x00000094332fedb0,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1d04b3]
+V  [jvm.dll+0x1ce583]
+V  [jvm.dll+0x3525cb]
+V  [jvm.dll+0x73e660]
+V  [jvm.dll+0x3b9ddf]
+V  [jvm.dll+0x3bc2e1]
+C  [jli.dll+0x520b]
+C  [ucrtbase.dll+0x2268a]
+C  [KERNEL32.DLL+0x17974]
+C  [ntdll.dll+0x5a2f1]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000c9f5e4c5b5d0, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x00000094332fedb0, RBP=0x0000000000000000, RSI=0x0000020034d5f800, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x00007ffb9669c0e8, R10=0x0000000000000000, R11=0x00000094332feb80
+R12=0x0000000000000000, R13=0x00007ffb6b8d3030, R14=0x0000020032af8a98, R15=0x00000094332ffaf8
+RIP=0x00007ffb6b5004b3, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x00000094332fedb0)
+0x00000094332fedb0:   0000020032b00250 00007ffb6b5f2298
+0x00000094332fedc0:   00000094332ffaf8 0000000000000400
+0x00000094332fedd0:   0000000000000000 0000020034d5f800
+0x00000094332fede0:   0000b76f4e2efa7a 00007ffb6b8d3030
+0x00000094332fedf0:   00000094332feed0 00007ffb6b8d3030
+0x00000094332fee00:   0000000000000000 00007ffb96680000
+0x00000094332fee10:   00000094332ffaf8 0000020032af8a98
+0x00000094332fee20:   00007ffb6bb97c78 0000000000000000
+0x00000094332fee30:   00007ffb6b4fe42a 00007ffba40bcd8c
+0x00000094332fee40:   00000094332feed0 0000000000008000
+0x00000094332fee50:   0000c9f5e4c5b5d0 0000020032af8a98
+0x00000094332fee60:   00007ffb00000000 00007ffb6b8d3030
+0x00000094332fee70:   0000020034d5f800 00000094332fef90
+0x00000094332fee80:   0000000000000000 00007ffb6b4fe583
+0x00000094332fee90:   00007ffb96660000 00007ffb9668cfc0
+0x00000094332feea0:   00000094332fef90 0000020034d5f800 
+
+Instructions: (pc=0x00007ffb6b5004b3)
+0x00007ffb6b5003b3:   f0 ff 15 e6 24 5e 00 48 8b cb 41 b1 01 48 2b 8c
+0x00007ffb6b5003c3:   24 90 00 00 00 45 33 c0 33 d2 c6 04 31 00 48 8b
+0x00007ffb6b5003d3:   ce e8 a7 0b 00 00 42 80 3c 33 3b 4a 8d 3c 33 75
+0x00007ffb6b5003e3:   1c 0f 1f 40 00 0f 1f 84 00 00 00 00 00 48 ff c3
+0x00007ffb6b5003f3:   ff c5 42 80 3c 33 3b 4a 8d 3c 33 74 f0 49 83 3c
+0x00007ffb6b500403:   24 00 74 18 48 8b 94 24 98 00 00 00 49 8b cf e8
+0x00007ffb6b500413:   19 ec ee ff 49 8b cc e8 81 eb ee ff 48 8b 44 24
+0x00007ffb6b500423:   20 48 8d 4c 24 30 49 89 47 18 48 8b 44 24 28 49
+0x00007ffb6b500433:   89 47 20 4d 89 67 10 e8 51 28 0f 00 44 8b ed 48
+0x00007ffb6b500443:   89 9c 24 90 00 00 00 48 3b 5c 24 38 0f 8c cd fe
+0x00007ffb6b500453:   ff ff 4c 8b 7c 24 40 4c 8b 64 24 48 48 8b 7c 24
+0x00007ffb6b500463:   50 48 8b 74 24 58 48 8b 9c 24 80 00 00 00 48 83
+0x00007ffb6b500473:   c4 60 41 5e 41 5d 5d c3 cc cc cc cc cc 40 53 55
+0x00007ffb6b500483:   56 41 55 48 81 ec b8 00 00 00 48 8b 05 e4 27 87
+0x00007ffb6b500493:   00 48 33 c4 48 89 84 24 a0 00 00 00 48 8b e9 48
+0x00007ffb6b5004a3:   c7 c3 ff ff ff ff 0f 1f 80 00 00 00 00 48 ff c3
+0x00007ffb6b5004b3:   80 3c 0b 00 75 f7 33 f6 c6 44 24 30 01 40 38 35
+0x00007ffb6b5004c3:   c9 50 8a 00 74 17 40 38 35 64 b7 89 00 75 0e 33
+0x00007ffb6b5004d3:   d2 48 8d 0d c5 75 69 00 e8 60 ca 19 00 45 33 ed
+0x00007ffb6b5004e3:   85 db 0f 8e 11 02 00 00 48 89 bc 24 e8 00 00 00
+0x00007ffb6b5004f3:   48 8b fd 4c 89 a4 24 f0 00 00 00 48 63 c3 33 db
+0x00007ffb6b500503:   4c 89 b4 24 f8 00 00 00 4c 89 bc 24 b0 00 00 00
+0x00007ffb6b500513:   48 89 44 24 68 48 89 74 24 40 0f 1f 00 0f b6 07
+0x00007ffb6b500523:   84 c0 74 12 3c 3b 74 0e 0f b6 44 2b 01 48 ff c3
+0x00007ffb6b500533:   ff c6 84 c0 75 ee 48 8d 54 24 38 48 c7 44 24 38
+0x00007ffb6b500543:   00 00 00 00 48 8d 4c 24 60 e8 bf 26 0f 00 48 8b
+0x00007ffb6b500553:   44 24 38 33 d2 4c 8b b0 78 02 00 00 49 8b 46 18
+0x00007ffb6b500563:   4d 8b 66 10 48 89 44 24 50 49 8b 46 20 48 89 44
+0x00007ffb6b500573:   24 58 49 8b 46 28 48 89 44 24 48 8b c6 41 2b c5
+0x00007ffb6b500583:   48 63 f8 48 8d 4f 01 e8 b1 4b 48 00 49 63 d5 4c
+0x00007ffb6b500593:   8b c7 48 03 d5 48 8b c8 4c 8b f8 ff 15 fc 22 5e
+0x00007ffb6b5005a3:   00 48 8b cb 48 2b 4c 24 40 80 7c 24 30 00 42 c6 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000020032af8660, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000020034d5f800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=12096, stack(0x0000009433200000,0x0000009433300000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb6ba8c347]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.009 Loaded shared library C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff6dc3d0000 - 0x00007ff6dc3dd000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\java.exe
+0x00007ffba7140000 - 0x00007ffba732d000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffba4840000 - 0x00007ffba48f4000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffba40a0000 - 0x00007ffba4335000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffba3670000 - 0x00007ffba376a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffb9b640000 - 0x00007ffb9b657000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\jli.dll
+0x00007ffb96750000 - 0x00007ffb96765000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\VCRUNTIME140.dll
+0x00007ffba4cf0000 - 0x00007ffba4e87000 	C:\Windows\System32\USER32.dll
+0x00007ffb978d0000 - 0x00007ffb97b49000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.2237_none_de70457e534c3aa8\COMCTL32.dll
+0x00007ffba35b0000 - 0x00007ffba35d0000 	C:\Windows\System32\win32u.dll
+0x00007ffba6fc0000 - 0x00007ffba705e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffba6570000 - 0x00007ffba6599000 	C:\Windows\System32\GDI32.dll
+0x00007ffba4490000 - 0x00007ffba47bd000 	C:\Windows\System32\combase.dll
+0x00007ffba33f0000 - 0x00007ffba358c000 	C:\Windows\System32\gdi32full.dll
+0x00007ffba4370000 - 0x00007ffba448f000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffba35d0000 - 0x00007ffba3670000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffba3360000 - 0x00007ffba33e2000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffba6460000 - 0x00007ffba648e000 	C:\Windows\System32\IMM32.DLL
+0x00007ffb966b0000 - 0x00007ffb9674b000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\msvcp140.dll
+0x00007ffb6b330000 - 0x00007ffb6be7b000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\server\jvm.dll
+0x00007ffba65b0000 - 0x00007ffba6654000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffba6f20000 - 0x00007ffba6fbe000 	C:\Windows\System32\sechost.dll
+0x00007ffba4c80000 - 0x00007ffba4c88000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffb9fe90000 - 0x00007ffb9feb4000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb923d0000 - 0x00007ffb923d9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffba6490000 - 0x00007ffba64fd000 	C:\Windows\System32\WS2_32.dll
+0x00007ffb97bf0000 - 0x00007ffb97bfa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb9fe00000 - 0x00007ffb9fe2d000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffba3200000 - 0x00007ffba324a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffba3150000 - 0x00007ffba3161000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffb9ff20000 - 0x00007ffb9ff30000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\verify.dll
+0x00007ffb9c1c0000 - 0x00007ffb9c3ad000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffb99c50000 - 0x00007ffb99c7a000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffb96680000 - 0x00007ffb966a8000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\java.dll
+0x00007ffb9ff00000 - 0x00007ffb9ff0a000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\jimage.dll
+0x00007ffb96660000 - 0x00007ffb96677000 	C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.2237_none_de70457e534c3aa8;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin\server
+
+VM Arguments:
+jvm_args: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xverify:none 
+java_command: c:\Users\Jair\.vscode\extensions\redhat.java-1.0.0\server\plugins\org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration c:\Users\Jair\AppData\Roaming\Code\User\globalStorage\redhat.java\1.0.0\config_ss_win -data c:\Users\Jair\AppData\Roaming\Code\User\workspaceStorage\ff4c8f7d1ca046ddf799869dc5761380\redhat.java\ss_ws
+java_class_path (initial): c:\Users\Jair\.vscode\extensions\redhat.java-1.0.0\server\plugins\org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+    uintx AdaptiveSizePolicyWeight                 = 90                                        {product} {command line}
+     bool BytecodeVerificationLocal                = false                                     {product} {command line}
+     bool BytecodeVerificationRemote               = false                                     {product} {command line}
+    uintx GCTimeRatio                              = 4                                         {product} {command line}
+   size_t InitialHeapSize                          = 104857600                                 {product} {command line}
+   size_t MaxHeapSize                              = 1073741824                                {product} {command line}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+     bool UseParallelGC                            = true                                      {product} {command line}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;"C:\Program Files;C:\Winnt;C:\Winnt\System32";;C:\Program Files\erl10.7\bin;C:\Program Files (x86)\Elixir\bin;C:\Windows\system32\config\systemprofile\.mix\escripts;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\GO\bin;C:\Program Files\Airshipper\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\Jair\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Jair\AppData\Local\Programs\Python\Python39\;C:\Users\Jair\AppData\Local\Microsoft\WindowsApps;;C:\Users\Jair\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jair\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\bin;;C:\Users\Jair\.dotnet\tools;C:\Users\Jair\go\bin;C:\Users\Jair\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\DataGrip 2021.2.4\bin;
+USERNAME=Jair
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 17763 (10.0.17763.2145)
+OS uptime: 6 days 23:14 hours
+
+CPU:total 4 (initial active 4) 
+
+Memory: 4k page, system-wide physical 8067M (3891M free)
+TotalPageFile size 10336M (AvailPageFile size 4268M)
+current process WorkingSet (physical memory assigned to process): 8M, peak: 8M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.11+9) for windows-amd64 JRE (11.0.11+9), built on Apr 20 2021 21:22:09 by "" with MS VC++ 15.9 (VS2017)
+
+END.

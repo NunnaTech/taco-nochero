@@ -1,4 +1,3 @@
-import "../src/assets/css/tailwind.css";
 import { MdAccountBalance } from "react-icons/md";
 import TacoButton from "./commons/TacoButton";
 import TacoButtonIcon from "./commons/TacoButtonIcon";

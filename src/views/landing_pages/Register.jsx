@@ -5,12 +5,12 @@ import { FcGoogle } from "react-icons/fc";
 
 export default function Register() {
     return (
-        <div className="w-full h-screen mx-auto flex justify-center place-items-center">
-            <div className="grid flex-col-1 md:grid-cols-2 w-full md:w-2/3">
+        <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
+            <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
                 <div
                     className="w-full h-20 md:h-full rounded-lg"
                     style={{
-                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47)`,
+                        background: `url(https://images.unsplash.com/photo-1624300629298-e9de39c13be5)`,
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
@@ -18,9 +18,9 @@ export default function Register() {
                 ></div>
                 <div className="bg-white p-5 rounded-lg">
                     <h1 className="h1-nochero">Registrate</h1>
-                    <p className="p-nochero mb-5">
-                        ¡Vamos!, inicia sesión para escoger la variedad de
-                        alimentos que tenemos para tí.
+                    <p className="p-nochero mb-4">
+                        ¡Vamos!, Registrate para no perderte la gran variedad de
+                        alimentos que tenemos para tí, en especial los tacos!.
                     </p>
                     <div className="mx-5">
                         <TacoButton
@@ -28,13 +28,30 @@ export default function Register() {
                             Icon={() => <FcGoogle />}
                             moreClasses="font-medium"
                             callBack={() => {}}
-                            text="Iniciar sesión con Google"
+                            text="Registrarse con Google"
                         />
-                        <hr className="my-5" />
+                        <hr className="my-4" />
+
+                        <label htmlFor="name">Nombre(s)</label>
+                        <TacoInput
+                            id="name"
+                            moreClasses="mb-4"
+                            placeholder="Ej. Manuel"
+                            type="text"
+                        />
+
+                        <label htmlFor="lastName">Apellidos(s)</label>
+                        <TacoInput
+                            id="lastName"
+                            moreClasses="mb-4"
+                            placeholder="Ej. Pavóz"
+                            type="text"
+                        />
+
                         <label htmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
-                            moreClasses="mb-5"
+                            moreClasses="mb-4"
                             placeholder="Ej. manuel@gmail.com"
                             type="email"
                         />
@@ -43,14 +60,14 @@ export default function Register() {
                             id="pass"
                             placeholder=""
                             type="password"
-                            moreClasses="mb-10"
+                            moreClasses="mb-8"
                         />
 
                         <TacoButton
                             bgColor="300"
                             moreClasses="font-semibold"
                             callBack={() => {}}
-                            text="Iniciar sesión"
+                            text="Crear cuenta"
                         />
                         <p className="text-center my-3 text-gray-300 font-bold">
                             ó
@@ -60,7 +77,7 @@ export default function Register() {
                             bgColor="200"
                             moreClasses="font-semibold"
                             callBack={() => {}}
-                            text="Crear una cuenta"
+                            text="Iniciar sesión"
                         />
                     </div>
                 </div>

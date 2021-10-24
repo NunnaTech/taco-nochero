@@ -5,8 +5,8 @@ import { FcGoogle } from "react-icons/fc";
 
 export default function Login() {
     return (
-        <div className="w-full h-screen mx-auto flex justify-center place-items-center">
-            <div className="grid flex-col-1 md:grid-cols-2 w-full md:w-2/3">
+        <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
+            <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
                 <div className="bg-white p-5 rounded-lg">
                     <h1 className="h1-nochero">Iniciar Sesión</h1>
                     <p className="p-nochero mb-5">
