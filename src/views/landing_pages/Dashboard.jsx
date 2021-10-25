@@ -13,7 +13,7 @@ import FloatingButtons from "../float_page/FloatingButtons";
 
 export default function Dashboard() {
     return (
-        <div className="w-full h-screen mx-auto text-white ">
+        <div className="w-full h-screen mx-auto ">
             <div className="flex justify-between place-content-center bg-gray-800 p-2">
                 <div>Logo</div>
                 <div className="inline-flex">
