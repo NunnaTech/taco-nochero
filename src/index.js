@@ -4,10 +4,11 @@ import './index.css';
 import "../src/assets/css/tailwind.css";
 import Dashboard from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
+import ShoppingCart from "./views/shopping_cart/ShoppingCart";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <ShoppingCart />
   </React.StrictMode>,
   document.getElementById('root')
 );
