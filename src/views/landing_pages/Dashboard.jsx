@@ -10,12 +10,15 @@ import {
 import CardDashboard from "../../commons/CardDashboard";
 import ChartDashboard from "../../commons/ChartDashboard";
 import FloatingButtons from "../float_page/FloatingButtons";
-
+import Logo from "../../assets/img/Taco logo.svg";
 export default function Dashboard() {
     return (
         <div className="w-full h-screen mx-auto ">
-            <div className="flex justify-between place-content-center bg-gray-800 p-2">
-                <div>Logo</div>
+            <div className="flex justify-between place-content-center bg-gray-800 p-2 items-center">
+                <div className="flex items-center">
+                    <img src={Logo} alt="" className="w-10 h-10 mr-2" />
+                    <p className="font-bold uppercase">Taco Nochero</p>
+                </div>
                 <div className="inline-flex">
                     <MdHomeFilled size="30" className="mr-3" />
                     <MdPerson size="30" />

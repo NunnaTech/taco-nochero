@@ -28,7 +28,7 @@ export default function Chat({ messages, setMessages }) {
                 <h2 className="h2-nochero text-center bg-nochero-300">
                     ¿En que podemos ayudarte?
                 </h2>
-                <div className="text-black overflow-y-scroll flex-grow">
+                <div className="text-black overflow-y-scroll h-4/6">
                     <div className="flex flex-wrap flex-col">{messages}</div>
                 </div>
                 <div className="flex text-black p-2">
@@ -40,7 +40,7 @@ export default function Chat({ messages, setMessages }) {
                         setData={setMessage}
                     />
                     <button
-                        className="active:bg-gray-300 mx-2 p-1 rounded-md"
+                        className="active:bg-gray-300 p-1 rounded-md"
                         onClick={pushMessage}
                     >
                         <MdSend size="30" />
