@@ -7,6 +7,7 @@ export default function Chat({
     stateNoti,
     setStateNoti,
 }) {
+    
     return (
         <button
             className="w-14 h-14 rounded-full bg-nochero-300 flex justify-center items-center active:bg-nochero-301 mr-5"

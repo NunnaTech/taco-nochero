@@ -43,7 +43,7 @@ export default function Dashboard() {
                 <ChartDashboard />
             </div>
             <div className="bg-gray-800">
-                <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 p-5">
                     <div className="">
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/2/23/Mexico_Map.svg"
@@ -52,7 +52,7 @@ export default function Dashboard() {
                         />
                     </div>
                     <div className="p-5">
-                        <h1 className="h1-nochero">
+                        <h1 className="h1-nochero text-center">
                             Estados de más consumo del país
                         </h1>
                         <ol className="list-disc pl-10 p-nochero">

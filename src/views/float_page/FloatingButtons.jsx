@@ -5,8 +5,15 @@ import NotificationButton from "./NotificationButton";
 import ChatButton from "./ChatButton";
 
 export default function FloatingButtons() {
-    const [stateNoti, setStateNoti] = useState(false);
-    const [stateSms, setStateSms] = useState(false);
+    const [stateNoti, setStateNoti] = useState(true);
+    const [stateSms, setStateSms] = useState(true);
+    const [messages, setMessages] = useState([
+        <p className="bg-gray-200 w-2/3 rounded-md m-1 p-1" key="1">
+            Hola, bienvenido(a) a Taco Nochero, estamos a tu dispocición si
+            tienes alguna pregunta, no dudes en hacerlo
+        </p>,
+    ]);
+
     return (
         <>
             <div className="fixed right-10 bottom-5 text-white">
@@ -28,7 +35,7 @@ export default function FloatingButtons() {
             </div>
 
             {!stateNoti && <Notification />}
-            {!stateSms && <Chat />}
+            {!stateSms && <Chat messages={messages} setMessages={setMessages} />}
         </>
     );
 }
