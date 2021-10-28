@@ -11,13 +11,13 @@ const SectionBody = () => {
                     </div>
 
                     <div className="md:container md:mx-auto lg:container lg:mx-auto">
-                        <h1 className="mb-2 text-4xl">
+                        <h1 className="mb-2 text-4xl text-white">
                             Encuentra
                         </h1>
-                        <h1 className="mb-5 text-5xl font-bold">
+                        <h1 className="mb-5 text-5xl font-bold text-white">
                             Tú comida favorita
                         </h1>
-                        <p className="mb-5">
+                        <p className="mb-5 text-white">
                             En un solo lugar, con precios accesibles y para toda la familia.
                         </p>
                     </div>
@@ -31,13 +31,13 @@ const SectionBody = () => {
 
                     <div className="md:container md:mx-auto lg:container lg:mx-auto flex justify-end">
                         <div className="">
-                            <h1 className="mb-2 text-4xl">
+                            <h1 className="mb-2 text-4xl text-white">
                                 Disfruta
                             </h1>
-                            <h1 className="mb-5 text-5xl font-bold">
+                            <h1 className="mb-5 text-5xl font-bold text-white">
                                 Los descuentos
                             </h1>
-                            <p className="mb-5">
+                            <p className="mb-5 text-white">
                                 Que tenemos para tí cada semana todos los días del año.
                             </p>
                         </div>
