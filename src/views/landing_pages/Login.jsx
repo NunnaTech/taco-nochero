@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 import { FcGoogle } from "react-icons/fc";
 
 export default function Login() {
+    let expEmail =
+        /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+        
+    const [emailState, setEmailState] = useState("");
+    const [passState, setPassState] = useState("");
+
+    const [typeEmail, setTypeEmail] = useState("");
+    const [typePass, setTypePass] = useState("");
+
+    const validLogin = () => {
+        if (expEmail.test(emailState)) {
+            setTypeEmail("correct");
+        } else {
+            setTypeEmail("error");
+        }
+
+        if (passState !== "") {
+            setTypePass("correct");
+        } else {
+            setTypePass("error");
+        }
+    };
+
     return (
         <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
             <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
@@ -28,6 +51,9 @@ export default function Login() {
                             moreClasses="mb-5"
                             placeholder="Ej. manuel@gmail.com"
                             type="email"
+                            data={emailState}
+                            setData={setEmailState}
+                            state={typeEmail}
                         />
                         <label htmlFor="pass">Contraseña:</label>
                         <TacoInput
@@ -35,12 +61,15 @@ export default function Login() {
                             placeholder=""
                             type="password"
                             moreClasses="mb-10"
+                            data={passState}
+                            setData={setPassState}
+                            state={typePass}
                         />
 
                         <TacoButton
                             bgColor="300"
                             moreClasses="font-semibold"
-                            callBack={() => {}}
+                            callBack={validLogin}
                             text="Iniciar sesión"
                         />
                         <p className="text-center my-3 text-gray-300 font-bold">

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
-import Menu from './views/landing_pages/Dashboard';
+import Menu from './views/landing_pages/Register';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
