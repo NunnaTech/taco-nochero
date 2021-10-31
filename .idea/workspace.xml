@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c82de419-ee23-42a5-83cc-3326a36000b4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zxy6wwOXVpwR8xeEwI7Wd7WNAn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sterplay2010\Desktop\taco-nochero\src\views\product_list\list_utilities" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c82de419-ee23-42a5-83cc-3326a36000b4" name="Default Changelist" comment="" />
+      <created>1635103862272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635103862272</updated>
+      <workItem from="1635103868362" duration="243000" />
+      <workItem from="1635104133016" duration="35000" />
+      <workItem from="1635104187481" duration="128000" />
+      <workItem from="1635104333143" duration="38890000" />
+      <workItem from="1635182427887" duration="11520000" />
+      <workItem from="1635207618118" duration="4384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="565" y="199" key="#Notifications" timestamp="1635105576791">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="565" y="199" key="#Notifications/0.0.1360.728@0.0.1360.728" timestamp="1635105576791" />
+    <state x="410" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635128186429">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="410" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1635128186429" />
+    <state x="773" y="41" key="FileChooserDialogImpl" timestamp="1635109122510">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="773" y="41" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1635109122510" />
+    <state x="182" y="0" key="SettingsEditor" timestamp="1635109135158">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="182" y="0" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1635109135158" />
+  </component>
+</project>
