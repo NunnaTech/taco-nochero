@@ -7,6 +7,8 @@ export default function TacoInput({
     disabled = false,
     type,
     state,
+    data,
+    setData
 }) {
     const stroke = state
         ? state === "correct"
@@ -21,6 +23,8 @@ export default function TacoInput({
             type={type}
             placeholder={placeholder}
             disabled={disabled}
+            value={data}
+            onChange={e=>setData(e.target.value)}
         />
     );
 }
