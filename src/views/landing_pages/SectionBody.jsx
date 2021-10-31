@@ -4,7 +4,7 @@ import Platillo from '../../assets/img/platillo.jpg'
 const SectionBody = () => {
     return (
         <>
-            <section className="hero h-130 py-14 lg:px-20">
+            <section id="body" className="hero h-130 py-14 lg:px-20">
                 <div className="flex-col hero-content lg:flex-row">
                     <div>
                         <img src={Platillo} className="object-contain md:object-scale-down sm:object-scale-down" />

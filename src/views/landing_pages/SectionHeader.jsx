@@ -5,7 +5,7 @@ import Logo2 from '../../assets/img/logo 2.png'
 const SectionHeader = () => {
     return (
 
-        <div className="hero min-h-screen " style={{ backgroundImage: "url('https://s1.1zoom.me/big0/932/Fast_food_Pancake_Meat_460368.jpg')", backgroundAttachment: "fixed" }}>
+        <div id="head" className="hero min-h-screen " style={{ backgroundImage: "url('https://s1.1zoom.me/big0/932/Fast_food_Pancake_Meat_460368.jpg')", backgroundAttachment: "fixed" }}>
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="text-center hero-content text-neutral-content">
                 <div className="max-w-md">

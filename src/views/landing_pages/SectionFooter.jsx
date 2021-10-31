@@ -4,7 +4,7 @@ import Logo2 from '../../assets/img/logo 2.png'
 
 const SectionFooter = () => {
     return (
-        <section>
+        <section id="footer">
             <footer className="p-10 footer bg-neutral text-neutral-content grid justify-items-center">
                 <div>
                     <img src={Logo2} width="256" height="256" />

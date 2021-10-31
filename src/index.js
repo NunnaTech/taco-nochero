@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
-import Menu from './views/landing_pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
-import ShoppingCart from "./views/shopping_cart/ShoppingCart";
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Menu />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
