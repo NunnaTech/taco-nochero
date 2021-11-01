@@ -9,6 +9,7 @@ export default function TacoInput({
     state,
     data,
     setData,
+    eventEnterPress
 }) {
     let stroke = "";
     if (state === "correct") {
@@ -26,6 +27,7 @@ export default function TacoInput({
             disabled={disabled}
             value={data}
             onChange={(e) => setData(e.target.value)}
+            onKeyDown={eventEnterPress}
         />
     );
 }

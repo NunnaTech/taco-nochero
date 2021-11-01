@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 import { FcGoogle } from "react-icons/fc";
@@ -6,7 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 export default function Register() {
     let expEmail =
         /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
-
+    const history = useHistory();
     const [nameState, setNameState] = useState("");
     const [lastnameState, setLastnameState] = useState("");
     const [emailState, setEmailState] = useState("");
@@ -19,30 +20,42 @@ export default function Register() {
     const [typePass2, setTypePass2] = useState("");
 
     const validRegister = () => {
+        let flag = true;
         if (nameState !== "") {
             setTypeName("correct");
+            flag &= true;
         } else {
             setTypeName("error");
+            flag &= false;
         }
 
         if (lastnameState !== "") {
             setTypeLastname("correct");
+            flag &= true;
         } else {
             setTypeLastname("error");
+            flag &= false;
         }
 
         if (expEmail.test(emailState)) {
             setTypeEmail("correct");
+            flag &= true;
         } else {
             setTypeEmail("error");
+            flag &= false;
         }
 
-        if (passState !== "" && pass2State !== "" && passState===pass2State) {
+        if (passState !== "" && pass2State !== "" && passState === pass2State) {
             setTypePass("correct");
             setTypePass2("correct");
+            flag &= true;
         } else {
             setTypePass("error");
             setTypePass2("error");
+            flag &= false;
+        }
+        if(flag){
+            history.push('login')
         }
     };
 
@@ -138,7 +151,9 @@ export default function Register() {
                         <TacoButton
                             bgColor="200"
                             moreClasses="font-semibold"
-                            callBack={() => {}}
+                            callBack={() => {
+                                history.push("/login");
+                            }}
                             text="Iniciar sesión"
                         />
                     </div>

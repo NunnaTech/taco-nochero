@@ -11,6 +11,7 @@ import CardDashboard from "../../commons/CardDashboard";
 import ChartDashboard from "../../commons/ChartDashboard";
 import FloatingButtons from "../float_page/FloatingButtons";
 import Logo from "../../assets/img/Taco logo.svg";
+import { Link } from "react-router-dom";
 export default function Dashboard() {
     return (
         <div className="w-full h-screen mx-auto ">
@@ -20,7 +21,10 @@ export default function Dashboard() {
                     <p className="font-bold uppercase">Taco Nochero</p>
                 </div>
                 <div className="inline-flex">
-                    <MdHomeFilled size="30" className="mr-3" />
+                    <Link to="/">
+                        <MdHomeFilled size="30" className="mr-3" />{" "}
+                    </Link>
+
                     <MdPerson size="30" />
                 </div>
             </div>

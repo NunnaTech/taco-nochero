@@ -2,28 +2,37 @@ import React, { useState } from "react";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 import { FcGoogle } from "react-icons/fc";
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
     let expEmail =
         /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
-        
+
     const [emailState, setEmailState] = useState("");
     const [passState, setPassState] = useState("");
-
+    const history = useHistory();
     const [typeEmail, setTypeEmail] = useState("");
     const [typePass, setTypePass] = useState("");
 
     const validLogin = () => {
+        let flag = true;
         if (expEmail.test(emailState)) {
+            flag &= true;
             setTypeEmail("correct");
         } else {
+            flag &= false;
             setTypeEmail("error");
         }
 
         if (passState !== "") {
             setTypePass("correct");
+            flag &= true;
         } else {
+            flag &= false;
             setTypePass("error");
+        }
+        if (flag) {
+            history.push("/dashboard");
         }
     };
 
@@ -79,7 +88,9 @@ export default function Login() {
                         <TacoButton
                             bgColor="200"
                             moreClasses="font-semibold"
-                            callBack={() => {}}
+                            callBack={() => {
+                                history.push("/register");
+                            }}
                             text="Crear una cuenta"
                         />
                     </div>
