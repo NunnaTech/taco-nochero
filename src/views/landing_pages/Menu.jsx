@@ -7,7 +7,7 @@ import {
 const Menu = () => {
     return (
         <>
-            <div className="navbar shadow-lg bg-neutral text-neutral-content bg-opacity-100">
+            <div className="navbar shadow-lg bg-neutral text-neutral-content bg-opacity-100 sticky top-0 z-50">
                 <div className="flex-1 px-2 mx-2">
                     <button className="btn btn-square btn-ghost mx-4">
                         <img src={Logo} width="32" height="32" />

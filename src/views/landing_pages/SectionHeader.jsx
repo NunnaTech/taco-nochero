@@ -1,7 +1,9 @@
 import React from "react";
 import TacoButton from "../../commons/TacoButton";
 import Logo2 from '../../assets/img/logo 2.png'
-
+import {
+    Link
+} from "react-router-dom";
 const SectionHeader = () => {
     return (
 
@@ -15,12 +17,14 @@ const SectionHeader = () => {
                     </p>
                     <img src={Logo2} width="512" height="512" />
                     <div className="py-10">
-                    <TacoButton
-                        bgColor="400"
-                        moreClasses="font-semibold"
-                        callBack={() => { }}
-                        text="¡Registrate!"
-                    />
+                        <Link to="/register">
+                            <TacoButton
+                                bgColor="400"
+                                moreClasses="font-semibold"
+                                callBack={() => { }}
+                                text="¡Registrate!"
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
