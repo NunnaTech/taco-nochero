@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
 import Dashboard from './views/landing_pages/Dashboard';
+import Payment from './views/payment_pages/test.jsx';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <Payment/>
   </React.StrictMode>,
   document.getElementById('root')
 );
