@@ -5,20 +5,22 @@ import TacoInput from "../../commons/TacoInput";
 export default function Chat({ messages, setMessages }) {
     const [message, setMessage] = useState("");
 
-    const pushMessage = () => {
-        if (message !== "") {
-            setMessages([
-                [
-                    ...messages,
-                    <p
-                        className="bg-blue-100 w-2/3 rounded-md m-1 p-1 self-end"
-                        key={message}
-                    >
-                        {message}
-                    </p>,
-                ],
-            ]);
-            setMessage("");
+    const pushMessage = (e) => {
+        if (e.key === "Enter") {
+            if (message !== "") {
+                setMessages([
+                    [
+                        ...messages,
+                        <p
+                            className="bg-blue-100 w-2/3 rounded-md m-1 p-1 self-end"
+                            key={message}
+                        >
+                            {message}
+                        </p>,
+                    ],
+                ]);
+                setMessage("");
+            }
         }
     };
 
@@ -38,10 +40,11 @@ export default function Chat({ messages, setMessages }) {
                         moreClasses=""
                         data={message}
                         setData={setMessage}
+                        eventEnterPress={pushMessage}
                     />
                     <button
                         className="active:bg-gray-300 p-1 rounded-md"
-                        onClick={pushMessage}
+                        onClick={() => pushMessage({ key: "Enter" })}
                     >
                         <MdSend size="30" />
                     </button>

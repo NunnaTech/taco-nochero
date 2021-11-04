@@ -1,9 +1,6 @@
-import { MdAccountBalance } from "react-icons/md";
-import TacoButton from "./commons/TacoButton";
-import TacoButtonIcon from "./commons/TacoButtonIcon";
-import TacoInput from "./commons/TacoInput";
 import LandingPage from '../src/views/landing_pages/LandingPage'
 import Login from '../src/views/landing_pages/Login'
+import Dashboard from '../src/views/landing_pages/Dashboard'
 import Register from '../src/views/landing_pages/Register'
 import Screen404 from '../src/views/error_pages/404'
 import Screen403 from '../src/views/error_pages/403'
@@ -21,6 +18,8 @@ function App() {
                 <Route exact path="/" component={LandingPage} />
                 <Router path="/register" component={Register} />
                 <Route path="/login" component={Login} />
+                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/register" component={Register} />
                 <Route path="/403" component={Screen403} />
                 <Route path="/500" component={Screen500} />
                 <Route path="/*" component={Screen404} />

@@ -8,13 +8,15 @@ export default function TacoInput({
     type,
     state,
     data,
-    setData
+    setData,
+    eventEnterPress
 }) {
-    const stroke = state
-        ? state === "correct"
-            ? "border-green-600"
-            : "border-red-600"
-        : "";
+    let stroke = "";
+    if (state === "correct") {
+        stroke = "border-green-600";
+    } else if (state === "error") {
+        stroke = "border-red-600";
+    }
     const myClass = `txt-nochero ${stroke} ${moreClasses}`;
     return (
         <input
@@ -24,7 +26,8 @@ export default function TacoInput({
             placeholder={placeholder}
             disabled={disabled}
             value={data}
-            onChange={e=>setData(e.target.value)}
+            onChange={(e) => setData(e.target.value)}
+            onKeyDown={eventEnterPress}
         />
     );
 }
