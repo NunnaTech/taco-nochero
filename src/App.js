@@ -1,102 +1,30 @@
-import { MdAccountBalance } from "react-icons/md";
-import TacoButton from "./commons/TacoButton";
-import TacoButtonIcon from "./commons/TacoButtonIcon";
-import TacoInput from "./commons/TacoInput";
-
+import LandingPage from '../src/views/landing_pages/LandingPage'
+import Login from '../src/views/landing_pages/Login'
+import Dashboard from '../src/views/landing_pages/Dashboard'
+import Register from '../src/views/landing_pages/Register'
+import Screen404 from '../src/views/error_pages/404'
+import Screen403 from '../src/views/error_pages/403'
+import Screen500 from '../src/views/error_pages/500'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 function App() {
     return (
-        <div className="grid grid-cols-2 bg-white">
-            <div className="m-5">
-                <h1 className="h1-nochero">Títulos h1</h1>
-                <h2 className="h2-nochero">Títulos h2</h2>
-                <h2 className="h3-nochero">Títulos h3</h2>
-                <p className="p-nochero">
-                    Esto es párrafo normal, donde puedo ingresar texto
-                </p>
-                <TacoButton
-                    bgColor="100"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    text="Acción"
-                />
-
-                <TacoButton
-                    bgColor="200"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    text="Acción"
-                />
-
-                <TacoButton
-                    bgColor="300"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    text="Acción"
-                    disabled
-                />
-
-                <TacoButton
-                    bgColor="400"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    text="Acción"
-                />
-
-                <TacoButton
-                    bgColor="500"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    text="Acción"
-                />
-
-                <TacoButtonIcon
-                    bgColor="100"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                />
-
-                <TacoButtonIcon
-                    bgColor="200"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    disabled
-                />
-
-                <TacoButtonIcon
-                    bgColor="300"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                />
-
-                <TacoButtonIcon
-                    bgColor="400"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                    disabled
-                />
-                <TacoButtonIcon
-                    bgColor="500"
-                    Icon={() => <MdAccountBalance />}
-                    callBack={() => console.log("función")}
-                />
-            </div>
-            <div className="m-5">
-                <TacoInput placeholder="Ingresa un texto" type="text" />
-                <TacoInput
-                    placeholder="Ingresa un texto"
-                    type="text"
-                    feedback="Textos vacíos"
-                    state="error"
-                />
-                <TacoInput
-                    placeholder="Ingresa un texto"
-                    type="text"
-                    state="correct"
-                    disabled
-                />
-            </div>
-        </div>
-    );
+        <Router>
+            <Switch>
+                <Route exact path="/" component={LandingPage} />
+                <Route path="/login" component={Login} />
+                <Route path="/dashboard" component={Dashboard} />
+                <Route path="/register" component={Register} />
+                <Route path="/403" component={Screen403} />
+                <Route path="/500" component={Screen500} />
+                <Route path="/*" component={Screen404} />
+            </Switch>
+        </Router>
+    )
 }
 
 export default App;

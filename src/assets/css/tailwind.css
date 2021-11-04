@@ -29,3 +29,8 @@
 .p-nochero {
     @apply text-base text-justify;
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}

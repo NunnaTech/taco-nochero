@@ -38,5 +38,5 @@ export default function ChartDashboard() {
             },
         ],
     };
-    return <div><Bar data={data} /></div>;
+    return <div className="bg-gray-800 rounded-xl"><Bar data={data} /></div>;
 }
