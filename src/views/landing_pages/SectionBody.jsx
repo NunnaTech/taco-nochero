@@ -1,6 +1,7 @@
 import React from "react";
 import Cerveza from '../../assets/img/cerveza.png'
 import Platillo from '../../assets/img/platillo.jpg'
+import Pricing from './Precing'
 const SectionBody = () => {
     return (
         <>
@@ -43,6 +44,9 @@ const SectionBody = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section>
+                <Pricing />
             </section>
         </>
     )
