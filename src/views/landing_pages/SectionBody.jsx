@@ -1,7 +1,7 @@
 import React from "react";
 import Cerveza from '../../assets/img/cerveza.png'
 import Platillo from '../../assets/img/platillo.jpg'
-import Pricing from './Precing'
+import Pricing from "../precing/Precing"
 const SectionBody = () => {
     return (
         <>
