@@ -5,7 +5,7 @@ import Pricing from "../precing/Precing"
 const SectionBody = () => {
     return (
         <>
-            <section id="body" className="hero h-130 py-14 lg:px-20">
+            <section className="hero h-130 py-14 lg:px-20">
                 <div className="flex-col hero-content lg:flex-row">
                     <div>
                         <img src={Platillo} className="object-contain md:object-scale-down sm:object-scale-down" />
@@ -24,7 +24,7 @@ const SectionBody = () => {
                     </div>
                 </div>
             </section>
-            <section className="hero h-130 lg:px-20">
+            <section className="hero h-130 lg:px-20" style={{ paddingBottom: 60 }}>
                 <div className="flex-col hero-content lg:flex-row-reverse">
                     <div >
                         <img src={Cerveza} className="object-contain md:object-scale-down sm:object-scale-down" />
@@ -45,7 +45,7 @@ const SectionBody = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="body">
                 <Pricing />
             </section>
         </>
