@@ -12,7 +12,7 @@ const Precing = () => {
          backgroundPosition: "center",
          backgroundSize: "cover",
          backgroundRepeat: "no-repeat",
-         opacity:.80 }}>
+          }}>
            
                     <div class="max-w-md">
                         <p className="text-center text-white hero-content p-nochero">
