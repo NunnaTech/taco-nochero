@@ -1,77 +1,169 @@
 export default function Delivery() {
   return (
-    <body class="bg-gray-100 flex bg-local">
-  <div class="bg-gray-100 mx-auto max-w-6xl bg-white py-10 px-6 lg:px-6 shadow-xl mb-24">
-    <form>
-      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-        <div class="-mx-3 md:flex mb-6">
-          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="company">
-              Company Name*
-            </label>
-            <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="company" type="text" placeholder="Tutsplus"/>
-            <div>
-              <span class="text-red-500 text-xs italic">
-                Please fill out this field.
-              </span>
+    <body class="bg-gray-100 flex">
+      <div class="bg-gray-100 min-w-full max-w-6xl px-6 lg:px-6  mb-5">
+        <form>
+          <div class="bg-white rounded px-10 py-8  flex flex-col shadow-xl">
+            <h1 class="card-title h2-nochero text-gray-800">
+              Información de Contacto
+            </h1>
+            <h1 class="card-title h4-nochero text-nochero-400 ">
+              Por favor, llena los siguientes campos.
+            </h1>
+            <div class="-mx-3 md:flex mb-6">
+              <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="company"
+                >
+                  Nombre(s)*
+                </label>
+                <input
+                  class="w-full bg-gray-200 text-black border rounded py-3 px-4 mb-3 border-red-600 text-xs"
+                  id="company"
+                  type="text"
+                  placeholder="Luis Enrique"
+                />
+                <div>
+                  <span class="text-red-500 text-xs italic">
+                    Por favor, rellena este campo.
+                  </span>
+                </div>
+              </div>
+              <div class="md:w-1/2 px-3">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="title"
+                >
+                  Apellido(s)*
+                </label>
+                <input
+                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  id="title"
+                  type="text"
+                  placeholder="Álvarez Ortiz"
+                />
+              </div>
+            </div>
+            <div class="-mx-3 md:flex mb-6">
+              <div class="md:w-full px-3">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="application-link"
+                >
+                  Calle y número de casa*
+                </label>
+                <input
+                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  id="application-link"
+                  type="text"
+                  placeholder="Vicente Suarez #23"
+                />
+              </div>
+            </div>{" "}
+            <div class="-mx-3 md:flex mb-6">
+              <div class="md:w-full px-3">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="application-link"
+                >
+                  Apartamento, local, etc (opcional)
+                </label>
+                <input
+                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  id="application-link"
+                  type="text"
+                  placeholder="Vicente Suarez #23"
+                />
+              </div>
+            </div>
+            <div class="-mx-3 md:flex">
+              <div class="md:w-1/2 px-3 mb-5 md:mb-0">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="location"
+                >
+                  Codigo Postal
+                </label>
+                <div>
+                  <input
+                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    id="location"
+                    placeholder="62577"
+                  ></input>
+                </div>
+              </div>
+              <div class="md:w-1/2 px-3 mb-5">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="job-type"
+                >
+                  Ciudad
+                </label>
+                <div>
+                  <input
+                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    id="job-type"
+                    placeholder="Cuernavaca"
+                  ></input>
+                </div>
+              </div>
+              <div class="md:w-1/2 px-3 mb-5">
+                <label
+                  class="tracking-wide text-black text-xs font-bold mb-2"
+                  for="department"
+                >
+                  Celular
+                </label>
+                <div>
+                  <input
+                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    id="department"
+                    placeholder="7773445034"
+                  ></input>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 card">
+              <div class="form-control">
+                <label class="cursor-pointer  label ">
+                  <span class="label-text text-gray-600 text-base">
+                    Guardar datos para próximas compras
+                  </span>
+                  <input type="checkbox" checked="checked" class="toggle toggle-nochero" />
+                </label>
+              </div>
+            </div>
+            <div class="p-6 card border-4 border-nochero-400">
+              <div class="form-control max-w-max">
+                <h1 class="h3-nochero card-title text-gray-700">Tipo de envío</h1>
+                <label class="cursor-pointer label">
+                  <span class="label-text text-gray-600 ml-5">Entrega Gratis</span>
+
+                  <input
+                    type="radio"
+                    name="opt"
+                    checked="checked"
+                    class="radio  border-gray-600"
+                    value=""
+                  />
+                </label>
+                <label class="cursor-pointer label">
+                  <span class="label-text text-gray-600 ml-5 mr-5">
+                    Entrega Rápida - $50
+                  </span>
+                  <input
+                    type="radio"
+                    name="opt"
+                    class="radio bg-white border-gray-600"
+                    value=""
+                  />
+                </label>
+              </div>
             </div>
           </div>
-          <div class="md:w-1/2 px-3">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="title">
-              Title*
-            </label>
-            <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="title" type="text" placeholder="Software Engineer"/>
-          </div>
-        </div>
-        <div class="-mx-3 md:flex mb-6">
-          <div class="md:w-full px-3">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
-              Application Link*
-            </label>
-            <input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="application-link" type="text" placeholder="http://...."/>
-          </div>
-        </div>
-        <div class="-mx-3 md:flex mb-2">
-          <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
-              Location*
-            </label>
-            <div>
-              <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="location">
-                <option>Abuja</option>
-                <option>Enugu</option>
-                <option>Lagos</option>
-              </select>
-            </div>
-          </div>
-          <div class="md:w-1/2 px-3">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="job-type">
-              Job Type*
-            </label>
-            <div>
-              <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="job-type">
-                <option>Full-Time</option>
-                <option>Part-Time</option>
-                <option>Internship</option>
-              </select>
-            </div>
-          </div>
-          <div class="md:w-1/2 px-3">
-            <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
-              Department*
-            </label>
-            <div>
-              <select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="department">
-                <option>Engineering</option>
-                <option>Design</option>
-                <option>Customer Support</option>
-              </select>
-            </div>
-          </div>
-        </div>    
+        </form>
       </div>
-    </form>
-  </div>
-</body>
+    </body>
   );
 }
