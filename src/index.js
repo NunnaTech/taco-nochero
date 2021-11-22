@@ -5,10 +5,11 @@ import "../src/assets/css/tailwind.css";
 import Dashboard from './views/landing_pages/Dashboard';
 import Payment from './views/payment_pages/test.jsx';
 import reportWebVitals from './reportWebVitals';
+import ShoppingCart from "./views/shopping_cart/ShoppingCart";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Payment/>
+    <Payment />
   </React.StrictMode>,
   document.getElementById('root')
 );

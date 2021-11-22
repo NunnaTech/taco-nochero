@@ -1,6 +1,6 @@
 export default function Delivery() {
   return (
-    <body class="bg-gray-100 flex">
+    <body class="bg-gray-100">
       <div class="bg-gray-100 min-w-full max-w-6xl px-6 lg:px-6  mb-5">
         <form>
           <div class="bg-white rounded px-10 py-8  flex flex-col shadow-xl">
