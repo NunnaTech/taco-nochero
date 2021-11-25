@@ -12,10 +12,10 @@ const CardPrecing = ({ titulo, precio, list1, list2, list3,list4 ,titulo2,precio
                 <h1 className="font-bold text-black text-2xl">
                     {titulo}  {titulo2}
                 </h1>
-                <p className="text-center my-3 ">
+                <p className="text-center my-3 text-black">
                     {precio} {precio2}
                 </p>
-                <ol className="list-disc pl-10 p-nochero">
+                <ol className="list-disc pl-10 p-nochero text-black">
                     <li>{list1}{listt1}</li>
                     <li>{list2}{listt2}</li>
                     <li>{list3}{listt3}</li>

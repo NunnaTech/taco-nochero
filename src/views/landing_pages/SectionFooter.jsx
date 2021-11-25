@@ -9,8 +9,7 @@ const SectionFooter = () => {
                 <div>
                     <img src={Logo2} width="256" height="256" />
                     <br />
-                    <p className=" text-xl py-5">Copyright © 2021 - All right reserved
-                    </p>
+                    <p className=" text-center text-xl py-5">Copyright © 2021 - All right reserved</p>
                 </div>
                 <div>
                     <span className="footer-title">Social</span>
