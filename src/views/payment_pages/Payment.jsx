@@ -1,6 +1,5 @@
 import {
   MdInfo,
-  MdLocalShipping,
   MdCreditCard,
   MdCalendarToday,
   MdPerson,
@@ -29,7 +28,7 @@ export default function Payment() {
                   class=" rounded max-w-full align-middle  object-contain h-28"
                 />
               </button>
-              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-blue-100 hover:border-blue-900 hover:shadow-lg focus:bg-blue-100 focus:border-blue-900 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none">
+              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-blue-50 hover:border-blue-900 hover:shadow-lg focus:bg-blue-50 focus:border-blue-900 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none">
                 <img
                   src={Visa}
                   alt="..."
@@ -64,7 +63,7 @@ export default function Payment() {
                   <label class="input-group  tracking-wide text-black  font-bold mt-2">
                     <input
                       type="text"
-                      value="0000 0000 0000 0000"
+                      placeholder="0000 0000 0000 0000"
                       class="input input-bordered  w-full bg-gray-100 border border-gray-200 text-gray-500  py-3 px-4 mb-3 rounded"
                     />
                     <span class="input input-bordered  bg-gray-200 border border-gray-200 text-black rounded ">
@@ -81,7 +80,7 @@ export default function Payment() {
                   <label class="input-group  tracking-wide text-black  font-bold mt-2">
                     <input
                       type="text"
-                      value="Luis Enrique Álvarez Ortiz"
+                      placeholder="Luis Enrique Álvarez Ortiz"
                       class="input input-bordered  w-full bg-gray-100 border border-gray-200 text-gray-500  py-3 px-4 mb-3 rounded"
                     />
                     <span class="input input-bordered  bg-gray-200 border border-gray-200 text-black rounded">
@@ -99,7 +98,7 @@ export default function Payment() {
                   <label class="input-group  tracking-wide text-black  font-bold mt-2">
                     <input
                       type="text"
-                      value="MM/YY"
+                      placeholder="MM/YY"
                       class="input input-bordered  w-full bg-gray-100 border text-gray-500   py-3 px-4 mb-3 rounded"
                     />
                     <span class="input input-bordered   bg-gray-200 border border-gray-200 text-black rounded">
@@ -115,7 +114,7 @@ export default function Payment() {
                   <label class="input-group  tracking-wide text-black  font-bold mt-2">
                     <input
                       type="text"
-                      value="***"
+                      placeholder="***"
                       class="input input-bordered  w-full bg-gray-100 border border-gray-200 text-gray-500  py-3 px-4 mb-3 rounded"
                     />
                     <span class="input input-bordered   bg-gray-200 border border-gray-200 text-black rounded">

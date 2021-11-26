@@ -1,10 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-import { MdDelete } from "react-icons/md";
 import TacoButton from "../../commons/TacoButton";
-import TacoInput from "../../commons/TacoInput";
-import TacoButtonIcon from "../../commons/TacoButtonIcon";
+import CardShoppingPayment from "../shopping_cart/shopping_components/CardShoppingPayment";
 import Details from "./Details";
 import Delivery from "./Delivery";
 import Payment from "./Payment";
@@ -20,60 +18,36 @@ export default function PaymentPage() {
   const onGoBack = () => (step >= 1 ? onChange(step - 1) : null);
 
   return (
-    <div class="hero min-h-screen bg-base-200">
-      <div class="flex-col justify-center hero-content lg:flex-row shadow-2xl card">
-        <div class=" bg-red-900 p-8">
-          <Step step={step} />
-          <div class="divider">
-            <BodySelector step={step} />
-
-            <div class="flex flex-row bg-gray-50 ">
-              <TacoButton
-                moreClasses="w-1/2 p-1"
-                bgColor="300"
-                callBack={() => onGoBack()}
-                text="Regresar"
-              />
-              <TacoButton
-                moreClasses="w-1/2 p-1"
-                bgColor="300"
-                callBack={() => onNext()}
-                text="Continuar"
-              />
+    <div class="bg-gray-300 mx-auto max-w-7xl  rounded py-6 px-2 lg:px-6 shadow-xl mb-24">
+      <div class="bg-gray-100 shadow-xl rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+        <div class="-mx-12 md:flex mb-6">
+          <div class="md:w-full px-3">
+            <Step step={step} />
+          </div>
+        </div>
+        <div class="-mx-5 md:flex mb-6">
+          <div class="md:w-1/2 px-1 mb-6 md:mb-0 ">
+            <div class="flex flex-col bg-nochero-500">
+              <BodySelector step={step} />
             </div>
           </div>
-          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div class="card-body">
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Email</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="email"
-                  class="input input-bordered"
-                />
-              </div>
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Password</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="password"
-                  class="input input-bordered"
-                />
-                <label class="label">
-                  <a href="#" class="label-text-alt">
-                    Forgot password?
-                  </a>
-                </label>
-              </div>
-              <div class="form-control mt-6">
-                <input type="button" value="Login" class="btn btn-primary" />
-              </div>
-            </div>
+          <div class="md:w-1/2 px-1 mb-6 md:mb-0 ">
+            <CardShoppingPayment />
           </div>
+        </div>
+        <div class="mx-2 flex flex-row justify-between  md:flex">
+          <TacoButton
+            moreClasses="max-w-min hover:bg-gray-700"
+            bgColor="500"
+            callBack={() => onGoBack()}
+            text="Regresar"
+          />
+          <TacoButton
+            moreClasses="max-w-min hover:bg-nochero-300"
+            bgColor="400"
+            callBack={() => onNext()}
+            text="Continuar"
+          />
         </div>
       </div>
     </div>
@@ -81,10 +55,10 @@ export default function PaymentPage() {
 }
 
 function Step({ step }) {
-  const completed = "step-primary";
-  const start = "step ";
+  const completed = "nochero-300";
+  const start = "step nochero-300";
   return (
-    <ul class="w-full steps my-5">
+    <ul class="w-full steps my-2 text-gray-500 font-bold">
       <li class={step >= 1 ? start + completed : start}>Detalles</li>
       <li class={step >= 2 ? start + completed : start}>Envío</li>
       <li class={step >= 3 ? start + completed : start}>Pago</li>
@@ -95,6 +69,8 @@ function Step({ step }) {
 
 function BodySelector({ step }) {
   switch (step) {
+    case 1:
+      return <Details />;
     case 2:
       return <Delivery />;
     case 3:
@@ -102,6 +78,6 @@ function BodySelector({ step }) {
     case 4:
       return <Confirmation />;
     default:
-      return <Details />;
+      return <Confirmation />;
   }
 }

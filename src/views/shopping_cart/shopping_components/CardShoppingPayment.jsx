@@ -31,7 +31,7 @@ const CardShopping = () => {
                 </div>
                 <div className="w-3/5">
                   <input
-                    class="w-11/12 text-nochero-500  border rounded-xl ml-1 py-3 px-4 text-xl"
+                    class="w-11/12 text-nochero-500  border rounded-xl ml-1 py-3 px-4 text-xl uppercase"
                     id="company"
                     type="text"
                     placeholder="AXF345"
