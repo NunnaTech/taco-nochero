@@ -19,7 +19,7 @@ export default function Delivery() {
                   Nombre(s)*
                 </label>
                 <input
-                  class="w-full bg-gray-200 text-black border rounded py-3 px-4 mb-3 border-red-600 text-xs"
+                  class="w-full bg-gray-100 text-black border rounded py-3 px-4 mb-3 border-red-600 text-xs"
                   id="company"
                   type="text"
                   placeholder="Luis Enrique"
@@ -38,7 +38,7 @@ export default function Delivery() {
                   Apellido(s)*
                 </label>
                 <input
-                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  class="w-full bg-gray-100 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
                   id="title"
                   type="text"
                   placeholder="Álvarez Ortiz"
@@ -54,7 +54,7 @@ export default function Delivery() {
                   Calle y número de casa*
                 </label>
                 <input
-                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  class="w-full bg-gray-100 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
                   id="application-link"
                   type="text"
                   placeholder="Vicente Suarez #23"
@@ -70,7 +70,7 @@ export default function Delivery() {
                   Apartamento, local, etc (opcional)
                 </label>
                 <input
-                  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
+                  class="w-full bg-gray-100 text-black border border-gray-200 rounded py-3 px-4 mb-3 text-xs"
                   id="application-link"
                   type="text"
                   placeholder="Vicente Suarez #23"
@@ -87,7 +87,7 @@ export default function Delivery() {
                 </label>
                 <div>
                   <input
-                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    class="w-full bg-gray-100 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
                     id="location"
                     placeholder="62577"
                   ></input>
@@ -102,7 +102,7 @@ export default function Delivery() {
                 </label>
                 <div>
                   <input
-                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    class="w-full bg-gray-100 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
                     id="job-type"
                     placeholder="Cuernavaca"
                   ></input>
@@ -117,7 +117,7 @@ export default function Delivery() {
                 </label>
                 <div>
                   <input
-                    class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
+                    class="w-full bg-gray-100 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded"
                     id="department"
                     placeholder="7773445034"
                   ></input>
