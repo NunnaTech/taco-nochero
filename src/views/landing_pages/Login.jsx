@@ -57,27 +57,28 @@ export default function Login() {
                         <label htmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
-                            moreClasses="mb-5"
                             placeholder="Ej. manuel@gmail.com"
                             type="email"
                             data={emailState}
                             setData={setEmailState}
                             state={typeEmail}
+                            errorMessage="El correo electrónico no debe estár vacío y ser inválido"
                         />
-                        <label htmlFor="pass">Contraseña:</label>
+                        <label htmlFor="pass" className="my-2">Contraseña:</label>
                         <TacoInput
                             id="pass"
                             placeholder=""
                             type="password"
-                            moreClasses="mb-10"
+                            moreClasses=""
                             data={passState}
                             setData={setPassState}
                             state={typePass}
+                            errorMessage="La contraseña no debe estár vacía"
                         />
 
                         <TacoButton
                             bgColor="300"
-                            moreClasses="font-semibold"
+                            moreClasses="font-semibold mt-10"
                             callBack={validLogin}
                             text="Iniciar sesión"
                         />

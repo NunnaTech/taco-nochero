@@ -9,7 +9,8 @@ export default function TacoInput({
     state,
     data,
     setData,
-    eventEnterPress
+    eventEnterPress,
+    errorMessage,
 }) {
     let stroke = "";
     if (state === "correct") {
@@ -19,15 +20,18 @@ export default function TacoInput({
     }
     const myClass = `txt-nochero ${stroke} ${moreClasses}`;
     return (
-        <input
-            id={id}
-            className={myClass}
-            type={type}
-            placeholder={placeholder}
-            disabled={disabled}
-            value={data}
-            onChange={(e) => setData(e.target.value)}
-            onKeyDown={eventEnterPress}
-        />
+        <>
+            <input
+                id={id}
+                className={myClass}
+                type={type}
+                placeholder={placeholder}
+                disabled={disabled}
+                value={data}
+                onChange={(e) => setData(e.target.value)}
+                onKeyDown={eventEnterPress}
+            />
+            {state === "error" && <p className="top-0 text-red-500 text-sm">{errorMessage}</p>}
+        </>
     );
 }
