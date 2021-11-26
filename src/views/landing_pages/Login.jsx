@@ -64,7 +64,9 @@ export default function Login() {
                             state={typeEmail}
                             errorMessage="El correo electrónico no debe estár vacío y ser inválido"
                         />
-                        <label htmlFor="pass" className="my-2">Contraseña:</label>
+                        <label htmlFor="pass" className="my-2">
+                            Contraseña:
+                        </label>
                         <TacoInput
                             id="pass"
                             placeholder=""
