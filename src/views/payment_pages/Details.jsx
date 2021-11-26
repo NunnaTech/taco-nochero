@@ -23,7 +23,7 @@ export default function Details() {
               <input
                 type="radio"
                 name="opt"
-                class="radio bg-white border-gray-600"
+                class="radio bg-white border-gray-400 border-2 hover:bg-nochero-400 focus:bg-nochero-400"
                 value=""
               />
             </label>

@@ -6,6 +6,11 @@ import {
   MdPerson,
 } from "react-icons/md";
 
+import Mastercard from "../../../src/assets/images/Mastercard.png";
+import Visa from "../../../src/assets/images/Visa.png";
+import Paypal from "../../../src/assets/images/Paypal.png";
+import Apple from "../../../src/assets/images/Apple.png";
+
 export default function Payment() {
   return (
     <body class="bg-gray-100">
@@ -13,50 +18,43 @@ export default function Payment() {
         <div class="bg-white rounded px-10 py-8  flex flex-col shadow-xl">
           <h1 class="card-title h2-nochero text-gray-800">Resumen de Pago</h1>
           <h1 class="card-title h4-nochero text-nochero-400 ">
-            Por favor, selecciona, tu método de pago:
+            Selecciona tu método de pago:
           </h1>
-          <div className="card bg-gray-100 border-2 py-2 rounded mb-5 shadow-sm flex justify-center">
-            <div className="flex flex-row justify-around items-center ">
-              <div className="w-3/6">
-                <h1 class="h3-nochero card-title mt-3 text-nochero-500">
-                  Contacto:
-                </h1>
-                <div>
-                  <h1 class="h4-nochero card-title  text-gray-700">
-                    Luis Enrique Álvarez Ortiz
-                  </h1>
-                  <h1 class="h4-nochero card-title  text-gray-700">
-                    emoxito@gmail.com
-                  </h1>
-                  <h1 class="h4-nochero card-title  text-gray-700">
-                    777 344 50 36
-                  </h1>
-                </div>
-              </div>
-              <div className="">
-                <MdInfo size="50" className="mr-3 text-blue-500" />
-              </div>
+          <div className="card bg-gray-100 border-2 py-4 rounded mb-5 shadow-sm flex justify-center">
+            <div className="flex flex-row justify-around items-center my-2">
+              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-yellow-50 hover:border-yellow-500 hover:shadow-lg focus:bg-yellow-50 focus:border-yellow-500 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none">
+                <img
+                  src={Mastercard}
+                  alt="..."
+                  class=" rounded max-w-full align-middle  object-contain h-28"
+                />
+              </button>
+              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-blue-100 hover:border-blue-900 hover:shadow-lg focus:bg-blue-100 focus:border-blue-900 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none">
+                <img
+                  src={Visa}
+                  alt="..."
+                  class="rounded max-w-full object-contain h-28 align-middle"
+                />
+              </button>
+            </div>
+            <div className="flex flex-row justify-around items-center mt-5 my-2">
+              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg focus:bg-blue-50 focus:border-blue-500 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none">
+                <img
+                  src={Paypal}
+                  alt="..."
+                  class=" rounded max-w-full align-middle  object-contain h-28"
+                />
+              </button>
+              <button className="w-6/12 sm:w-4/12 px-4 border-2 rounded-lg bg-gray-50 border-gray-400 hover:bg-gray-200 hover:border-gray-500 hover:shadow-lg focus:bg-gray-200 focus:border-gray-500 focus:shadow-lg transform hover:scale-110 motion-reduce:transform-none ">
+                <img
+                  src={Apple}
+                  alt="..."
+                  class="rounded max-w-full object-contain h-28 align-middle"
+                />
+              </button>
             </div>
           </div>
-          <div className="card bg-gray-100 border-2 py-2 rounded mb-5 shadow-sm flex justify-center">
-            <div className="flex flex-row justify-around items-center ">
-              <div className="w-3/6">
-                <h1 class="h3-nochero card-title mt-3 text-nochero-500">
-                  Envío:
-                </h1>
-                <div>
-                  <p className="text-lg text-nochero-500 mb-5">
-                    Vicente Suarez #123 Villagón, Jiutepec, Morelos Portón Cafe,
-                    Fachada Naranja
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <MdLocalShipping size="50" className="mr-3 text-green-500" />
-              </div>
-            </div>
-          </div>
-          <div className="card bg-white  py-2 rounded mb-5 shadow-sm flex justify-center">
+          <div className="card bg-white  mb-5  flex justify-center">
             <div className="py-5">
               <div class="-mx-3 md:flex mb-6 px-1">
                 <div class="md:w-full px-3">
@@ -69,7 +67,7 @@ export default function Payment() {
                       value="0000 0000 0000 0000"
                       class="input input-bordered  w-full bg-gray-100 border border-gray-200 text-gray-500  py-3 px-4 mb-3 rounded"
                     />
-                    <span class="input input-bordered  bg-gray-200 border border-gray-200 text-black rounded">
+                    <span class="input input-bordered  bg-gray-200 border border-gray-200 text-black rounded ">
                       <MdCreditCard size="30" className="text-gray-500" />
                     </span>
                   </label>
@@ -135,7 +133,7 @@ export default function Payment() {
                     <input
                       type="checkbox"
                       checked="checked"
-                      class="toggle toggle-nochero"
+                      class="toggle toggle-nochero hover:bg-gray-300"
                     />
                   </label>
                 </div>

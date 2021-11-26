@@ -130,11 +130,11 @@ export default function Delivery() {
                   <span class="label-text text-gray-600 text-base">
                     Guardar datos para próximas compras
                   </span>
-                  <input type="checkbox" checked="checked" class="toggle toggle-nochero" />
+                  <input type="checkbox" checked="checked" class="toggle toggle-nochero hover:bg-gray-300" />
                 </label>
               </div>
             </div>
-            <div class="p-6 card border-4 border-nochero-400">
+            <div class="p-6 card border-2 border-nochero-400">
               <div class="form-control max-w-max">
                 <h1 class="h3-nochero card-title text-gray-700">Tipo de envío</h1>
                 <label class="cursor-pointer label">
@@ -143,8 +143,7 @@ export default function Delivery() {
                   <input
                     type="radio"
                     name="opt"
-                    checked="checked"
-                    class="radio  border-gray-600"
+                    class="radio  bg-white border-gray-400 border-2 hover:bg-nochero-400 focus:bg-nochero-400"
                     value=""
                   />
                 </label>
@@ -155,7 +154,7 @@ export default function Delivery() {
                   <input
                     type="radio"
                     name="opt"
-                    class="radio bg-white border-gray-600"
+                    class="radio  bg-white border-gray-400 border-2 hover:bg-nochero-400 focus:bg-nochero-400"
                     value=""
                   />
                 </label>

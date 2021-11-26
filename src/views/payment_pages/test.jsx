@@ -41,13 +41,13 @@ export default function PaymentPage() {
         </div>
         <div class="mx-2 flex flex-row justify-between  md:flex">
           <TacoButton
-            moreClasses="max-w-min"
+            moreClasses="max-w-min hover:bg-gray-700"
             bgColor="500"
             callBack={() => onGoBack()}
             text="Regresar"
           />
           <TacoButton
-            moreClasses="max-w-min"
+            moreClasses="max-w-min hover:bg-nochero-300"
             bgColor="400"
             callBack={() => onNext()}
             text="Continuar"
