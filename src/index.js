@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import "../src/assets/css/tailwind.css";
 import Payment from './views/payment_pages/payment_view';
+import ConfirmationPurchase from './views/email_pages/confirmation_purchase';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

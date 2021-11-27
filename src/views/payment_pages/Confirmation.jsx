@@ -27,9 +27,7 @@ export default function Confirmation() {
                   777 344 50 36
                 </h1>
               </div>
-              <div className="">
-                <MdInfo size="50" className="mr-3 text-blue-500" />
-              </div>
+              <MdInfo size="50" className="mr-3 text-blue-500" />
             </div>
           </div>
           <div className="card bg-gray-100 border-2 py-2 rounded mb-5 shadow flex justify-center">
@@ -43,9 +41,7 @@ export default function Confirmation() {
                   Fachada Naranja
                 </p>
               </div>
-              <div className="">
-                <MdLocalShipping size="50" className="mr-3 text-green-500" />
-              </div>
+              <MdLocalShipping size="50" className="mr-3 text-green-500" />
             </div>
           </div>
           <div className="card h-48 bg-gray-100 border-2 py-2 rounded mb-5 shadow flex justify-center">
@@ -60,9 +56,7 @@ export default function Confirmation() {
                   </h1>
                 </div>
               </div>
-              <div className="">
-                <MdCreditCard size="50" className="mr-3 text-yellow-500" />
-              </div>
+              <MdCreditCard size="50" className="mr-3 text-yellow-500" />
             </div>
           </div>
         </div>
