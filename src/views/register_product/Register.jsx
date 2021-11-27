@@ -41,10 +41,13 @@ export default function Register() {
                             </label>
                             <textarea class="textarea h-24 textarea-bordered" placeholder="Descripción"></textarea>
                         </div>
+                        <div >
                         <label class="input-group">
-                            <span>Imagen URL</span>
+                            <span>Imagen</span>
                             <TacoInput type="text" placeholder="https://i.imgur.com/VlmHIgu.jpg" class="input input-bordered" />
                         </label>
+                        </div>
+                       
                       
                        <div> <TacoButton
                             bgColor="200"

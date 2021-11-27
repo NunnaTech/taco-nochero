@@ -1,5 +1,4 @@
-//import LandingPage from '../src/views/landing_pages/LandingPage'ss
-import LandingPage from '../src/views/register_product/Register'
+import LandingPage from '../src/views/landing_pages/LandingPage'
 import Login from '../src/views/landing_pages/Login'
 import Dashboard from '../src/views/landing_pages/Dashboard'
 import Register from '../src/views/landing_pages/Register'

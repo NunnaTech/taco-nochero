@@ -7,13 +7,11 @@ import CardList from "./components/Card_precing";
 const Precing = () => {
     const [isToggled, setIsToggled] = useState(false);
     return (
-        <div className="h-full">
-            <div className="grid place-items-center min-h-screen " style={{
-                backgroundImage: "url('https://i.imgur.com/VlmHIgu.jpg')", backgroundAttachment: "fixed",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-            }}>
+       
+        <div  className="hero min-h-screen " style={{ backgroundImage: "url('https://i.imgur.com/VlmHIgu.jpg')", backgroundAttachment: "fixed" }}>
+            <div className="hero-overlay bg-opacity-80"></div>
+            <div className="grid place-items-center min-h-screen " >
+
                 <div class="max-w-md">
                     <p className="text-center text-white hero-content text-4xl">
                         Paquetes
