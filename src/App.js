@@ -5,6 +5,7 @@ import Register from '../src/views/landing_pages/Register'
 import Screen404 from '../src/views/error_pages/404'
 import Screen403 from '../src/views/error_pages/403'
 import Screen500 from '../src/views/error_pages/500'
+import DataTable from '../src/views/datatable/Datatable'
 import {
     BrowserRouter as Router,
     Switch,
@@ -16,6 +17,8 @@ function App() {
         <Router>
             <Switch>
                 <Route exact path="/" component={LandingPage} />
+                <Route path="/table" component={DataTable} />
+                <Router path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/register" component={Register} />

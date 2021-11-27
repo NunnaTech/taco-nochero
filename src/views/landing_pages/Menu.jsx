@@ -7,7 +7,7 @@ import {
 const Menu = () => {
     return (
         <>
-            <div className="navbar shadow-lg bg-neutral text-neutral-content bg-opacity-100">
+            <div className="navbar shadow-lg bg-neutral text-neutral-content bg-opacity-100 sticky top-0 z-50">
                 <div className="flex-1 px-2 mx-2">
                     <button className="btn btn-square btn-ghost mx-4">
                         <img src={Logo} width="32" height="32" />
@@ -50,11 +50,18 @@ const Menu = () => {
                             bgColor="400"
                             moreClasses="font-semibold"
                             callBack={() => {
-                            
+
                             }}
                             text="Iniciar sesión"
                         />
                     </Link>
+                </div>
+                <div className="flex-none lg:hidden ">
+                    <button className="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </>
