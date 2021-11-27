@@ -87,60 +87,58 @@ export default function Register() {
                         <label htmlFor="name">Nombre(s)</label>
                         <TacoInput
                             id="name"
-                            moreClasses="mb-4"
                             placeholder="Ej. Manuel"
                             type="text"
                             data={nameState}
                             setData={setNameState}
                             state={typeName}
+                            errorMessage="El nombre no debe estár vacío y ser inválido"
                         />
 
-                        <label htmlFor="lastName">Apellidos(s)</label>
+                        <label className="mt-4" htmlFor="lastName">Apellidos(s)</label>
                         <TacoInput
                             id="lastName"
-                            moreClasses="mb-4"
                             placeholder="Ej. Pavóz"
                             type="text"
                             data={lastnameState}
                             setData={setLastnameState}
                             state={typeLastname}
+                            errorMessage="Los apellidos no deben estár vacíos y ser inválidos"
                         />
 
                         <label htmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
-                            moreClasses="mb-4"
                             placeholder="Ej. manuel@gmail.com"
                             type="email"
                             data={emailState}
                             setData={setEmailState}
                             state={typeEmail}
+                            errorMessage="El nombre no debe estár vacío y ser inválido"
                         />
-                        <label htmlFor="pass">Contraseña:</label>
+                        <label className="mt-4" htmlFor="pass">Contraseña:</label>
                         <TacoInput
                             id="pass"
-                            placeholder=""
                             type="password"
-                            moreClasses="mb-4"
                             data={passState}
                             setData={setPassState}
                             state={typePass}
+                            errorMessage="La contraseña no debe estár vacía"
                         />
-
-                        <label htmlFor="pass">Confirmar contraseña:</label>
+                        
+                        <label className="mt-4" htmlFor="pass2">Confirmar contraseña:</label>
                         <TacoInput
-                            id="pass"
-                            placeholder=""
+                            id="pass2"
                             type="password"
-                            moreClasses="mb-8"
                             data={pass2State}
                             setData={setPass2State}
                             state={typePass2}
+                            errorMessage="La contraseñas no coinciden"
                         />
 
                         <TacoButton
                             bgColor="300"
-                            moreClasses="font-semibold"
+                            moreClasses="font-semibold mt-8"
                             callBack={validRegister}
                             text="Crear cuenta"
                         />
