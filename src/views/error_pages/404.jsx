@@ -1,6 +1,7 @@
 import React from "react";
 import BrokenTaco from "../../assets/svg/broken_taco.svg";
 import TacoButton from "../../commons/TacoButton";
+import { Link } from "react-router-dom";
 
 export default function Page404() {
   return (
@@ -12,12 +13,14 @@ export default function Page404() {
           <p className="m-1 ">La página que estás buscando no existe</p>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
-          <TacoButton
-            moreClasses="w-1/2 mx-auto"
-            bgColor="300"
-            callBack={() => console.log("going to landing page")}
-            text="Volver al inicio"
-          />
+        <Link to="/">
+            <TacoButton
+              moreClasses="w-1/2 mx-auto"
+              bgColor="300"
+              callBack={() => console.log("going to landing page")}
+              text="Volver al inicio"
+            />
+          </Link>
           <img className="my-10 w-80 self-center" src={BrokenTaco} alt="Taco" />
         </div>
       </div>

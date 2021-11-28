@@ -1,6 +1,7 @@
 import React from "react";
 import Sign from "../../assets/svg/wet_floor.svg";
 import TacoButton from "../../commons/TacoButton";
+import { Link } from "react-router-dom";
 
 export default function Page500() {
   return (
@@ -13,12 +14,14 @@ export default function Page500() {
           </h2>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
-          <TacoButton
-            moreClasses="w-1/2 mx-auto"
-            bgColor="300"
-            callBack={() => console.log("going to landing page")}
-            text="Volver al inicio"
-          />
+          <Link to="/">
+            <TacoButton
+              moreClasses="w-1/2 mx-auto"
+              bgColor="300"
+              callBack={() => console.log("going to landing page")}
+              text="Volver al inicio"
+            />
+          </Link>
           <img className="my-10 w-80 self-center" src={Sign} alt="Sign" />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Alarm from "../../assets/svg/alarm_access.svg";
 import TacoButton from "../../commons/TacoButton";
+import { Link } from "react-router-dom";
 
 export default function Page403() {
   return (
@@ -8,17 +9,17 @@ export default function Page403() {
       <div className="card  text-center text-white shadow-sm p-5">
         <h1 className="text-center text-9xl font-bold">403</h1>
         <div className="m-1">
-          <h2 className="text-4xl  font-bold">
-          No tienes acceso a este sitio
-          </h2>
+          <h2 className="text-4xl  font-bold">No tienes acceso a este sitio</h2>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
+        <Link to="/">
           <TacoButton
             moreClasses="w-1/2 mx-auto"
             bgColor="300"
             callBack={() => console.log("going to landing page")}
             text="Volver al inicio"
           />
+          </Link>
           <img className="my-10 w-80 self-center" src={Alarm} alt="Alarm" />
         </div>
       </div>
