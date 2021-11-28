@@ -1,13 +1,11 @@
 import React from "react";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
-import { FcGoogle } from "react-icons/fc";
-
 
 export default function Profile() {
     return (
-        <div className="w-full md:grid-cols-2 md:w-2/3 h-screen mx-auto flex  place-items-center text-black ">
-            <div className="grid grid-col-1 md:grid-cols-2 w-full  md:w-2/3 ">
+        <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
+            <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
                 <div
                     className="w-full h-20 md:h-full rounded-lg"
                     style={{
@@ -15,53 +13,43 @@ export default function Profile() {
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
-                        height: '600px',
-                        width: '300px',
-                        opacity: 0.6,
-
+                        
                     }}
-                >
-                    <img class="w-32 h-32 rounded-full mx-auto  md:w-48 md:h-auto" 
+                > 
+                    <img class="w-20 h-20 rounded-full mx-auto  md:w-48 md:h-48" 
                     style={{
-                        background: `url(https://i.imgur.com/utQhcY5.jpg)`,
+                        background: `url(https://i.imgur.com/4iZkWmQ.jpg)`,
                         backgroundPosition: "center",
                         backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        height: '200px',
-                        width: '200px',
-                        marginTop: '30px',
-                      
+                        backgroundRepeat: "no-repeat",                   
                     }}
                     >
                     </img>
-                    <p className="h2-nochero flex justify-center">
-                        Perfil
+                    <p className="h2-nochero flex justify-center text-black">
+                        Tus Datos
                     </p>
                 </div>
-                <div className="bg-white p-5 rounded-lg  "
-                 style={{
-                    height: '600px',
-                    width: '600px', }}>
-                    <h1 className="h1-nochero">Tus Datos</h1>
-                 
+                
+                <div className="bg-white p-5 rounded-lg">
+                    <h1 className="h1-nochero my-4">Perfil</h1>
+
                     <div className="mx-5">
-                        
                         <hr className="my-4" />
 
                         <label htmlFor="name">Nombre(s)</label>
                         <TacoInput
                             id="name"
                             moreClasses="mb-4"
-                            defaultValue="Pedrito"
+                            placeholder="Pedrito"
                             type="text"
-                            
+
                         />
 
                         <label htmlFor="lastName">Apellidos(s)</label>
                         <TacoInput
                             id="lastName"
                             moreClasses="mb-4"
-                            placeholder="Ej. Pavóz"
+                            placeholder="Perez"
                             type="text"
                         />
 
@@ -69,20 +57,19 @@ export default function Profile() {
                         <TacoInput
                             id="email"
                             moreClasses="mb-4"
-                            placeholder="Ej. manuel@gmail.com"
+                            placeholder="pedro@gmail.com"
                             type="email"
                         />
-                        <label htmlFor="pass">Contraseña:</label>
+                          <label htmlFor="pass">Contraseña:</label>
                         <TacoInput
-                            id="pass"
                             placeholder=""
                             type="password"
+                            placeholder="********"
                             moreClasses="mb-8"
                         />
-                          <TacoButton
+                        <TacoButton
                             bgColor="300"
                             moreClasses="font-semibold"
-                            callBack={() => {}}
                             text="Guardar"
                         />
                     </div>
