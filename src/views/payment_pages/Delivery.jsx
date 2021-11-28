@@ -130,7 +130,7 @@ export default function Delivery() {
                   <span class="label-text text-gray-600 text-base">
                     Guardar datos para próximas compras
                   </span>
-                  <input type="checkbox" checked="checked" class="toggle toggle-nochero hover:bg-gray-300" />
+                  <input type="checkbox" checked={true} readOnly  class="toggle toggle-nochero hover:bg-gray-300" />
                 </label>
               </div>
             </div>
