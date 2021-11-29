@@ -55,8 +55,8 @@ export default function PaymentPage() {
 }
 
 function Step({ step }) {
-  const completed = "step-primary";
-  const start = "step ";
+  const completed = "step step-success  ";
+  const start = "step r";
   return (
     <ul class="w-full steps my-2 text-gray-500 font-bold">
       <li class={step >= 1 ? start + completed : start}>Detalles</li>
