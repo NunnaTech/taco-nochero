@@ -131,7 +131,8 @@ export default function Payment() {
                     </span>
                     <input
                       type="checkbox"
-                      checked="checked"
+                      checked={true}
+                      readOnly
                       class="toggle toggle-nochero hover:bg-gray-300"
                     />
                   </label>
