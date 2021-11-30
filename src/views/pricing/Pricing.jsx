@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Switch from "./components/Switch";
 import { promociones, promociones2 } from './components/data'
-import CardList from "./components/Card_precing";
+import CardList from "./components/Card_pricing";
 
 
-const Precing = () => {
+const Pricing = () => {
     const [isToggled, setIsToggled] = useState(false);
     return (
        
-        <div  className="hero min-h-screen " style={{ backgroundImage: "url('https://i.imgur.com/VlmHIgu.jpg')", backgroundAttachment: "fixed" }}>
+        <div  className="hero min-h-screen " style={{ backgroundImage: "url('https://s3.aws-k8s.generated.photos/ai-generated-photos/upscaler-uploads/678/600fe2ff-b26a-44c0-91bf-57af0a34740c.jpg')", backgroundAttachment: "fixed" }}>
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="grid place-items-center min-h-screen " >
 
@@ -57,4 +57,4 @@ const Precing = () => {
     )
 }
 
-export default Precing;
+export default Pricing;

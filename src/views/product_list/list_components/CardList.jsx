@@ -1,18 +1,18 @@
 import Madera from '../../../assets/images/FondoProducto.png';
-import {useState} from "react";
+import { useState } from "react";
 
-const CardList = ({producto, IMG}) => {
+const CardList = ({ producto, IMG }) => {
     const [shadow, setShadow] = useState("card image-full")
     return (
-        <div  className="hover:bg-gray-200 card image-full">
+        <div className="hover:bg-gray-200 card image-full">
             <figure>
-                <img src={Madera}/>
+                <img src={Madera} />
             </figure>
-            <div className="place-items-center card-body mt-5 content-center flex justify-items-center mr-2 ml-2">
+            <div className="place-items-center card-body mt-5 content-center flex justify-center ">
                 <h1 className="font-bold text-white text-2xl">
                     {producto}
                 </h1>
-                <img src={IMG} className="mt-12 md:h-16 lg:h-28 h-16"/>
+                <img src={IMG} className="h-40 shadow rounded w-auto align-middle border-none" />
             </div>
         </div>
     )

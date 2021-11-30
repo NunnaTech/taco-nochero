@@ -14,7 +14,7 @@ const List = () => {
                     Menú
                 </h1>
                 <SearchCustom/>
-                <div className="grid sm:grid-cols-4 grid-cols-1 mt-10 mr-24 ml-24 gap-4 mb-10">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 mt-10 mr-24 ml-24 gap-4 mb-10">
                     {productos.map(obj => {
                         return (
                             <div key={obj.Nombre}>

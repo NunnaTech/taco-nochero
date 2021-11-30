@@ -5,8 +5,11 @@ import Logo from '../../assets/img/Taco logo.svg'
 
 import { useHistory } from "react-router-dom";
 
-export default function Register() {
-
+export default function RegisterProduct() {
+    const [test1, setTest1] = useState();
+    const [test2, setTest2] = useState();
+    const [test3, setTest3] = useState();
+    const [test4, setTest4] = useState();
     return (
         <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
             <div className="grid  w-full md:w-3/5">
@@ -15,7 +18,7 @@ export default function Register() {
                         <img src={Logo} width="32" height="32" />
                     </div>
                     <div>
-                    <p className="text-center text-black hero-content p-nochero">
+                        <p className="text-center text-black hero-content p-nochero">
                             Registrar Producto
                         </p>
                     </div>
@@ -24,11 +27,11 @@ export default function Register() {
 
                         <label class="input-group ">
                             <span>Nombre</span>
-                            <TacoInput type="text" placeholder="Torta de Mole" class="input input-bordered" />
+                            <TacoInput type="text" data={test1} setData={setTest1} placeholder="Torta de Mole" class="input input-bordered" />
                         </label>
                         <label class="input-group">
                             <span>Precio($)</span>
-                            <TacoInput type="text" placeholder="20" class="input input-bordered" />
+                            <TacoInput type="text" data={test2} setData={setTest2} placeholder="20" class="input input-bordered" onChange={(e) => { }} />
                         </label>
                         <select class="select select-bordered w-full max-w-xs">
                             <option disabled="disabled" selected="selected">Seleccionar Categoría</option>
@@ -42,20 +45,21 @@ export default function Register() {
                             <textarea class="textarea h-24 textarea-bordered" placeholder="Descripción"></textarea>
                         </div>
                         <div >
-                        <label class="input-group">
-                            <span>Imagen</span>
-                            <TacoInput type="text" placeholder="https://i.imgur.com/VlmHIgu.jpg" class="input input-bordered" />
-                        </label>
+                            <label class="input-group">
+                                <span>Imagen</span>
+                                <TacoInput type="text" data={test3} setData={setTest3} placeholder="https://i.imgur.com/VlmHIgu.jpg" class="input input-bordered" onChange={(e) => { }} />
+                            </label>
                         </div>
-                       
-                      
-                       <div> <TacoButton
+
+
+                        <div> <TacoButton
                             bgColor="200"
                             moreClasses="font-semibold"
                             text="Registrar Producto"
+                            data={test4} setData={setTest4}
                         /></div>
-                        
-                       
+
+
                     </div>
                 </div>
             </div>

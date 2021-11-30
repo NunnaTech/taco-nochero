@@ -8,7 +8,6 @@ const ShoppingCart = ()=>{
         <div className="sm:grid sm:place-items-center sm:h-full h-full">
             <div className="sm:container sm:mx-auto sm:flex sm:justify-center sm:mt-12 sm:mb-12 hidden">
                 <CardShopping/>
-
             </div>
             <div className="sm:hidden">
                 <CardShoppingResponsive info={info}/>

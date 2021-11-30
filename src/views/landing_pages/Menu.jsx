@@ -22,7 +22,7 @@ const Menu = () => {
                                     bgColor="400"
                                     moreClasses="font-semibold"
                                     callBack={() => { }}
-                                    text="Home"
+                                    text="Inicio"
                                 />
                             </a>
                             <a href="#body">
