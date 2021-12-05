@@ -13,39 +13,32 @@ export default function Profile() {
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
-                        
                     }}
-                > 
-                    <img class="w-20 h-20 rounded-full mx-auto  md:w-48 md:h-48" 
-                    style={{
-                        background: `url(https://i.imgur.com/4iZkWmQ.jpg)`,
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",                   
-                    }}
-                    >
-                    </img>
-                    <p className="h2-nochero flex justify-center text-black">
-                        Tus Datos
-                    </p>
-                </div>
-                
+                ></div>
+
                 <div className="bg-white p-5 rounded-lg">
                     <h1 className="h1-nochero my-4">Perfil</h1>
-
+                    <img
+                        className="w-20 h-20 rounded-full mx-auto  md:w-48 md:h-48"
+                        style={{
+                            background: `url(https://i.imgur.com/4iZkWmQ.jpg)`,
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                        }}
+                    ></img>
                     <div className="mx-5">
                         <hr className="my-4" />
 
-                        <label htmlFor="name">Nombre(s)</label>
+                        <label htmlhtmlFor="name">Nombre(s)</label>
                         <TacoInput
                             id="name"
                             moreClasses="mb-4"
                             placeholder="Pedrito"
                             type="text"
-
                         />
 
-                        <label htmlFor="lastName">Apellidos(s)</label>
+                        <label htmlhtmlFor="lastName">Apellidos(s)</label>
                         <TacoInput
                             id="lastName"
                             moreClasses="mb-4"
@@ -53,14 +46,14 @@ export default function Profile() {
                             type="text"
                         />
 
-                        <label htmlFor="email">Correo electrónico:</label>
+                        <label htmlhtmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
                             moreClasses="mb-4"
                             placeholder="pedro@gmail.com"
                             type="email"
                         />
-                          <label htmlFor="pass">Contraseña:</label>
+                        <label htmlhtmlFor="pass">Contraseña:</label>
                         <TacoInput
                             placeholder=""
                             type="password"

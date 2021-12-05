@@ -21,7 +21,7 @@ const SectionHeader = () => {
                     <p className="text-4xl">Bienvenido a</p>
                     <img src={Logo2} width="512" height="512" />
                     <div className="py-10">
-                        <Link to="/register">
+                        <Link to="/taco-nochero/register">
                             <TacoButton
                                 bgColor="400"
                                 moreClasses="font-semibold"

@@ -1,9 +1,7 @@
 import React from "react";
 import TacoButton from "../../commons/TacoButton";
-import Logo from '../../assets/img/Taco logo.svg'
-import {
-    Link
-} from "react-router-dom";
+import Logo from "../../assets/img/Taco logo.svg";
+import { Link } from "react-router-dom";
 const Menu = () => {
     return (
         <>
@@ -12,16 +10,14 @@ const Menu = () => {
                     <button className="btn btn-square btn-ghost mx-4">
                         <img src={Logo} width="32" height="32" />
                     </button>
-                    <span className="text-lg font-bold">
-                        Taco nochero
-                    </span>
+                    <span className="text-lg font-bold">Taco nochero</span>
                     <div className="mx-5">
                         <div className=" hidden lg:flex space-x-3">
                             <a href="#head ">
                                 <TacoButton
                                     bgColor="400"
                                     moreClasses="font-semibold"
-                                    callBack={() => { }}
+                                    callBack={() => {}}
                                     text="Inicio"
                                 />
                             </a>
@@ -29,7 +25,7 @@ const Menu = () => {
                                 <TacoButton
                                     bgColor="400"
                                     moreClasses="font-semibold"
-                                    callBack={() => { }}
+                                    callBack={() => {}}
                                     text="Paquetes"
                                 />
                             </a>
@@ -37,35 +33,45 @@ const Menu = () => {
                                 <TacoButton
                                     bgColor="400"
                                     moreClasses="font-semibold"
-                                    callBack={() => { }}
+                                    callBack={() => {}}
                                     text="Contacto"
                                 />
                             </a>
+                            <Link to="/taco-nochero/productList">
+                                <TacoButton
+                                    bgColor="400"
+                                    moreClasses="font-semibold"
+                                    text="Menú"
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div className="flex-none hidden lg:flex mx-4">
-                    <Link to="/login">
+                    <Link to="/taco-nochero/login">
                         <TacoButton
                             bgColor="400"
                             moreClasses="font-semibold"
-                            callBack={() => {
-
-                            }}
+                            callBack={() => {}}
                             text="Iniciar sesión"
                         />
                     </Link>
                 </div>
                 <div className="flex-none lg:hidden ">
                     <button className="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            className="inline-block w-6 h-6 stroke-current"
+                        >
                             <path d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Menu;

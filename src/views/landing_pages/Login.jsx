@@ -32,7 +32,7 @@ export default function Login() {
             setTypePass("error");
         }
         if (flag) {
-            history.push("/dashboard");
+            history.push("/taco-nochero/dashboard");
         }
     };
 
@@ -54,7 +54,7 @@ export default function Login() {
                             text="Iniciar sesión con Google"
                         />
                         <hr className="my-5" />
-                        <label htmlFor="email">Correo electrónico:</label>
+                        <label htmlhtmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
                             placeholder="Ej. manuel@gmail.com"
@@ -64,7 +64,7 @@ export default function Login() {
                             state={typeEmail}
                             errorMessage="El correo electrónico no debe estár vacío y ser inválido"
                         />
-                        <label htmlFor="pass" className="my-2">
+                        <label htmlhtmlFor="pass" className="my-2">
                             Contraseña:
                         </label>
                         <TacoInput
@@ -92,7 +92,7 @@ export default function Login() {
                             bgColor="200"
                             moreClasses="font-semibold"
                             callBack={() => {
-                                history.push("/register");
+                                history.push("/taco-nochero/register");
                             }}
                             text="Crear una cuenta"
                         />

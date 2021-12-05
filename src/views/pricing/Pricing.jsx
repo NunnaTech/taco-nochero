@@ -12,7 +12,7 @@ const Pricing = () => {
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="grid place-items-center min-h-screen " >
 
-                <div class="max-w-md">
+                <div className="max-w-md">
                     <p className="text-center text-white hero-content text-4xl">
                         Paquetes
                     </p>

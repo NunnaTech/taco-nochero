@@ -55,7 +55,7 @@ export default function Register() {
             flag &= false;
         }
         if(flag){
-            history.push('login')
+            history.push('/taco-nochero/login')
         }
     };
 
@@ -84,7 +84,7 @@ export default function Register() {
                         />
                         <hr className="my-4" />
 
-                        <label htmlFor="name">Nombre(s)</label>
+                        <label htmlhtmlFor="name">Nombre(s)</label>
                         <TacoInput
                             id="name"
                             placeholder="Ej. Manuel"
@@ -95,7 +95,7 @@ export default function Register() {
                             errorMessage="El nombre no debe estár vacío y ser inválido"
                         />
 
-                        <label className="mt-4" htmlFor="lastName">Apellidos(s)</label>
+                        <label className="mt-4" htmlhtmlFor="lastName">Apellidos(s)</label>
                         <TacoInput
                             id="lastName"
                             placeholder="Ej. Pavóz"
@@ -106,7 +106,7 @@ export default function Register() {
                             errorMessage="Los apellidos no deben estár vacíos y ser inválidos"
                         />
 
-                        <label htmlFor="email">Correo electrónico:</label>
+                        <label htmlhtmlFor="email">Correo electrónico:</label>
                         <TacoInput
                             id="email"
                             placeholder="Ej. manuel@gmail.com"
@@ -116,7 +116,7 @@ export default function Register() {
                             state={typeEmail}
                             errorMessage="El nombre no debe estár vacío y ser inválido"
                         />
-                        <label className="mt-4" htmlFor="pass">Contraseña:</label>
+                        <label className="mt-4" htmlhtmlFor="pass">Contraseña:</label>
                         <TacoInput
                             id="pass"
                             type="password"
@@ -126,7 +126,7 @@ export default function Register() {
                             errorMessage="La contraseña no debe estár vacía"
                         />
                         
-                        <label className="mt-4" htmlFor="pass2">Confirmar contraseña:</label>
+                        <label className="mt-4" htmlhtmlFor="pass2">Confirmar contraseña:</label>
                         <TacoInput
                             id="pass2"
                             type="password"
@@ -150,7 +150,7 @@ export default function Register() {
                             bgColor="200"
                             moreClasses="font-semibold"
                             callBack={() => {
-                                history.push("/login");
+                                history.push("/taco-nochero/login");
                             }}
                             text="Iniciar sesión"
                         />

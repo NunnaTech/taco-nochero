@@ -4,7 +4,7 @@ import DetailNormal from "./detail_components/DetailNormal";
 
 const Detail = () => {
     return (
-        <div className="flex grid grid-cols-2 h-screen">
+        <div className="grid grid-cols-2 h-screen">
             <div className="sm:bg-white sm:flex sm:flex-col sm:justify-center sm:items-center hidden">
                 <h1 className="font-bold text-black text-2xl mb-6">
                     TACOS AL PASTOR

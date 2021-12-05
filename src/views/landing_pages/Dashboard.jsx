@@ -6,10 +6,10 @@ import {
     MdDataExploration,
     MdHomeFilled,
     MdPerson,
+    MdTableChart,
 } from "react-icons/md";
 import CardDashboard from "../../commons/CardDashboard";
 import ChartDashboard from "../../commons/ChartDashboard";
-import FloatingButtons from "../float_page/FloatingButtons";
 import Logo from "../../assets/img/Taco logo.svg";
 import { Link } from "react-router-dom";
 export default function Dashboard() {
@@ -21,11 +21,15 @@ export default function Dashboard() {
                     <p className="font-bold uppercase">Taco Nochero</p>
                 </div>
                 <div className="inline-flex">
-                    <Link to="/">
+                    <Link to="/taco-nochero">
                         <MdHomeFilled size="30" className="mr-3" />{" "}
                     </Link>
-
-                    <MdPerson size="30" />
+                    <Link to="/taco-nochero/table">
+                        <MdTableChart size="30" className="mr-3" />{" "}
+                    </Link>
+                    <Link to="/taco-nochero/profile">
+                        <MdPerson size="30" />
+                    </Link>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
@@ -73,7 +77,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
-            <FloatingButtons />
+           
         </div>
     );
 }

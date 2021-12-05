@@ -12,7 +12,7 @@ export default function Page403() {
           <h2 className="text-4xl  font-bold">No tienes acceso a este sitio</h2>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
-        <Link to="/">
+        <Link to="/taco-nochero">
           <TacoButton
             moreClasses="w-1/2 mx-auto"
             bgColor="300"

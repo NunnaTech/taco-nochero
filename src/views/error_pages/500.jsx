@@ -14,7 +14,7 @@ export default function Page500() {
           </h2>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
-          <Link to="/">
+          <Link to="/taco-nochero">
             <TacoButton
               moreClasses="w-1/2 mx-auto"
               bgColor="300"

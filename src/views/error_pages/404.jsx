@@ -13,7 +13,7 @@ export default function Page404() {
           <p className="m-1 ">La página que estás buscando no existe</p>
         </div>
         <div className="justify-center flex-col flex items-center my-5 mx-auto">
-        <Link to="/">
+        <Link to="/taco-nochero">
             <TacoButton
               moreClasses="w-1/2 mx-auto"
               bgColor="300"

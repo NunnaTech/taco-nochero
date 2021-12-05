@@ -24,22 +24,22 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={LandingPage} />
-                <Route path="/register" component={Register} />
-                <Route path="/login" component={Login} />
-                <Route path="/profile" component={Profile} />
-                <Route path="/dashboard" component={Dashboard} />
-                <Route path="/register" component={Register} />
-                <Route path="/registerProduct" component={RegisterProduct} />
-                <Route path="/productDetail" component={ProductDetail} />
-                <Route path="/shoppingCart" component={ShoppingCart} />
-                <Route path="/productList" component={ProductList} />
-                <Route path="/payment" component={Payment} />
-                <Route path="/inbox" component={Inbox} />
-                <Route path="/pricing" component={Pricing} />
-                <Route path="/table" component={DataTable} />
-                <Route path="/403" component={Screen403} />
-                <Route path="/500" component={Screen500} />
+                <Route exact path="/taco-nochero" component={LandingPage} />
+                <Route path="/taco-nochero/register" component={Register} />
+                <Route path="/taco-nochero/login" component={Login} />
+                <Route path="/taco-nochero/profile" component={Profile} />
+                <Route path="/taco-nochero/dashboard" component={Dashboard} />
+                <Route path="/taco-nochero/register" component={Register} />
+                <Route path="/taco-nochero/registerProduct" component={RegisterProduct} />
+                <Route path="/taco-nochero/productDetail" component={ProductDetail} />
+                <Route path="/taco-nochero/shoppingCart" component={ShoppingCart} />
+                <Route path="/taco-nochero/productList" component={ProductList} />
+                <Route path="/taco-nochero/payment" component={Payment} />
+                <Route path="/taco-nochero/inbox" component={Inbox} />
+                <Route path="/taco-nochero/pricing" component={Pricing} />
+                <Route path="/taco-nochero/table" component={DataTable} />
+                <Route path="/taco-nochero/403" component={Screen403} />
+                <Route path="/taco-nochero/500" component={Screen500} />
                 <Route path="/*" component={Screen404} />
             </Switch>
         </Router>
