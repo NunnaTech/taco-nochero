@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/taco-nochero/static/css/main.6b6acb0e.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.f109a7a3.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.f109a7a3.chunk.js.map",
+    "main.css": "/taco-nochero/static/css/main.a00e815a.chunk.css",
+    "main.js": "/taco-nochero/static/js/main.c5bfa4cb.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.c5bfa4cb.chunk.js.map",
     "runtime-main.js": "/taco-nochero/static/js/runtime-main.be4e13de.js",
     "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.be4e13de.js.map",
-    "static/js/2.db33ae16.chunk.js": "/taco-nochero/static/js/2.db33ae16.chunk.js",
-    "static/js/2.db33ae16.chunk.js.map": "/taco-nochero/static/js/2.db33ae16.chunk.js.map",
+    "static/js/2.a56ae427.chunk.js": "/taco-nochero/static/js/2.a56ae427.chunk.js",
+    "static/js/2.a56ae427.chunk.js.map": "/taco-nochero/static/js/2.a56ae427.chunk.js.map",
     "static/js/3.48b55f0f.chunk.js": "/taco-nochero/static/js/3.48b55f0f.chunk.js",
     "static/js/3.48b55f0f.chunk.js.map": "/taco-nochero/static/js/3.48b55f0f.chunk.js.map",
     "index.html": "/taco-nochero/index.html",
-    "static/css/main.6b6acb0e.chunk.css.map": "/taco-nochero/static/css/main.6b6acb0e.chunk.css.map",
-    "static/js/2.db33ae16.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.db33ae16.chunk.js.LICENSE.txt",
+    "static/css/main.a00e815a.chunk.css.map": "/taco-nochero/static/css/main.a00e815a.chunk.css.map",
+    "static/js/2.a56ae427.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.a56ae427.chunk.js.LICENSE.txt",
     "static/media/Alambres.c81a356b.png": "/taco-nochero/static/media/Alambres.c81a356b.png",
     "static/media/Apple.79c23ff0.png": "/taco-nochero/static/media/Apple.79c23ff0.png",
     "static/media/Bebidas.1a610ff4.png": "/taco-nochero/static/media/Bebidas.1a610ff4.png",
@@ -24,24 +24,24 @@
     "static/media/Mastercard.da5d4fb5.png": "/taco-nochero/static/media/Mastercard.da5d4fb5.png",
     "static/media/Paypal.518ac715.png": "/taco-nochero/static/media/Paypal.518ac715.png",
     "static/media/Quesadillas.b615281d.png": "/taco-nochero/static/media/Quesadillas.b615281d.png",
-    "static/media/Taco logo.3b1d05b4.svg": "/taco-nochero/static/media/Taco logo.3b1d05b4.svg",
-    "static/media/Taco.6c526bf4.svg": "/taco-nochero/static/media/Taco.6c526bf4.svg",
+    "static/media/Taco logo.0520c9f9.svg": "/taco-nochero/static/media/Taco logo.0520c9f9.svg",
+    "static/media/Taco.ac464bd1.svg": "/taco-nochero/static/media/Taco.ac464bd1.svg",
     "static/media/Tacos.fa5827ff.png": "/taco-nochero/static/media/Tacos.fa5827ff.png",
     "static/media/TacosCart.b755bc30.png": "/taco-nochero/static/media/TacosCart.b755bc30.png",
     "static/media/TacosDetalle.d2955b7c.png": "/taco-nochero/static/media/TacosDetalle.d2955b7c.png",
     "static/media/Tortas.1a262629.png": "/taco-nochero/static/media/Tortas.1a262629.png",
     "static/media/Visa.a325c90a.png": "/taco-nochero/static/media/Visa.a325c90a.png",
-    "static/media/alarm_access.3137d014.svg": "/taco-nochero/static/media/alarm_access.3137d014.svg",
-    "static/media/broken_taco.e5f65e66.svg": "/taco-nochero/static/media/broken_taco.e5f65e66.svg",
+    "static/media/alarm_access.433ca362.svg": "/taco-nochero/static/media/alarm_access.433ca362.svg",
+    "static/media/broken_taco.9b4128ee.svg": "/taco-nochero/static/media/broken_taco.9b4128ee.svg",
     "static/media/cerveza.9b58e0b0.png": "/taco-nochero/static/media/cerveza.9b58e0b0.png",
     "static/media/logo 2.9541ec68.png": "/taco-nochero/static/media/logo 2.9541ec68.png",
     "static/media/platillo.060f1c6c.jpg": "/taco-nochero/static/media/platillo.060f1c6c.jpg",
-    "static/media/wet_floor.fd9a54bf.svg": "/taco-nochero/static/media/wet_floor.fd9a54bf.svg"
+    "static/media/wet_floor.e42c96e3.svg": "/taco-nochero/static/media/wet_floor.e42c96e3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.be4e13de.js",
-    "static/js/2.db33ae16.chunk.js",
-    "static/css/main.6b6acb0e.chunk.css",
-    "static/js/main.f109a7a3.chunk.js"
+    "static/js/2.a56ae427.chunk.js",
+    "static/css/main.a00e815a.chunk.css",
+    "static/js/main.c5bfa4cb.chunk.js"
   ]
 }
