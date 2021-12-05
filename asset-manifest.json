@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/taco-nochero/static/css/main.a00e815a.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.c5bfa4cb.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.c5bfa4cb.chunk.js.map",
-    "runtime-main.js": "/taco-nochero/static/js/runtime-main.be4e13de.js",
-    "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.be4e13de.js.map",
-    "static/js/2.a56ae427.chunk.js": "/taco-nochero/static/js/2.a56ae427.chunk.js",
-    "static/js/2.a56ae427.chunk.js.map": "/taco-nochero/static/js/2.a56ae427.chunk.js.map",
-    "static/js/3.48b55f0f.chunk.js": "/taco-nochero/static/js/3.48b55f0f.chunk.js",
-    "static/js/3.48b55f0f.chunk.js.map": "/taco-nochero/static/js/3.48b55f0f.chunk.js.map",
+    "main.css": "/taco-nochero/static/css/main.185329d1.chunk.css",
+    "main.js": "/taco-nochero/static/js/main.a77f0bb9.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.a77f0bb9.chunk.js.map",
+    "runtime-main.js": "/taco-nochero/static/js/runtime-main.ee6e97cd.js",
+    "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.ee6e97cd.js.map",
+    "static/js/2.250ff2d8.chunk.js": "/taco-nochero/static/js/2.250ff2d8.chunk.js",
+    "static/js/2.250ff2d8.chunk.js.map": "/taco-nochero/static/js/2.250ff2d8.chunk.js.map",
+    "static/js/3.d26f01e9.chunk.js": "/taco-nochero/static/js/3.d26f01e9.chunk.js",
+    "static/js/3.d26f01e9.chunk.js.map": "/taco-nochero/static/js/3.d26f01e9.chunk.js.map",
     "index.html": "/taco-nochero/index.html",
-    "static/css/main.a00e815a.chunk.css.map": "/taco-nochero/static/css/main.a00e815a.chunk.css.map",
-    "static/js/2.a56ae427.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.a56ae427.chunk.js.LICENSE.txt",
+    "static/css/main.185329d1.chunk.css.map": "/taco-nochero/static/css/main.185329d1.chunk.css.map",
+    "static/js/2.250ff2d8.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.250ff2d8.chunk.js.LICENSE.txt",
     "static/media/Alambres.c81a356b.png": "/taco-nochero/static/media/Alambres.c81a356b.png",
     "static/media/Apple.79c23ff0.png": "/taco-nochero/static/media/Apple.79c23ff0.png",
     "static/media/Bebidas.1a610ff4.png": "/taco-nochero/static/media/Bebidas.1a610ff4.png",
@@ -39,9 +39,9 @@
     "static/media/wet_floor.e42c96e3.svg": "/taco-nochero/static/media/wet_floor.e42c96e3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.be4e13de.js",
-    "static/js/2.a56ae427.chunk.js",
-    "static/css/main.a00e815a.chunk.css",
-    "static/js/main.c5bfa4cb.chunk.js"
+    "static/js/runtime-main.ee6e97cd.js",
+    "static/js/2.250ff2d8.chunk.js",
+    "static/css/main.185329d1.chunk.css",
+    "static/js/main.a77f0bb9.chunk.js"
   ]
 }
