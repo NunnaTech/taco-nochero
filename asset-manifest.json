@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/taco-nochero/static/css/main.d9164ae2.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.e366ab2f.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.e366ab2f.chunk.js.map",
+    "main.css": "/taco-nochero/static/css/main.516db858.chunk.css",
+    "main.js": "/taco-nochero/static/js/main.0ad6792f.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.0ad6792f.chunk.js.map",
     "runtime-main.js": "/taco-nochero/static/js/runtime-main.ee6e97cd.js",
     "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.ee6e97cd.js.map",
     "static/js/2.068d50d8.chunk.js": "/taco-nochero/static/js/2.068d50d8.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d26f01e9.chunk.js": "/taco-nochero/static/js/3.d26f01e9.chunk.js",
     "static/js/3.d26f01e9.chunk.js.map": "/taco-nochero/static/js/3.d26f01e9.chunk.js.map",
     "index.html": "/taco-nochero/index.html",
-    "static/css/main.d9164ae2.chunk.css.map": "/taco-nochero/static/css/main.d9164ae2.chunk.css.map",
+    "static/css/main.516db858.chunk.css.map": "/taco-nochero/static/css/main.516db858.chunk.css.map",
     "static/js/2.068d50d8.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.068d50d8.chunk.js.LICENSE.txt",
     "static/media/Alambres.c81a356b.png": "/taco-nochero/static/media/Alambres.c81a356b.png",
     "static/media/Apple.79c23ff0.png": "/taco-nochero/static/media/Apple.79c23ff0.png",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.ee6e97cd.js",
     "static/js/2.068d50d8.chunk.js",
-    "static/css/main.d9164ae2.chunk.css",
-    "static/js/main.e366ab2f.chunk.js"
+    "static/css/main.516db858.chunk.css",
+    "static/js/main.0ad6792f.chunk.js"
   ]
 }
