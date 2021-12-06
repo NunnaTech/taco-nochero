@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/taco-nochero/static/css/main.d9164ae2.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.17b69b2b.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.17b69b2b.chunk.js.map",
+    "main.js": "/taco-nochero/static/js/main.a0a4331f.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.a0a4331f.chunk.js.map",
     "runtime-main.js": "/taco-nochero/static/js/runtime-main.ee6e97cd.js",
     "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.ee6e97cd.js.map",
-    "static/js/2.068d50d8.chunk.js": "/taco-nochero/static/js/2.068d50d8.chunk.js",
-    "static/js/2.068d50d8.chunk.js.map": "/taco-nochero/static/js/2.068d50d8.chunk.js.map",
+    "static/js/2.771e7ed8.chunk.js": "/taco-nochero/static/js/2.771e7ed8.chunk.js",
+    "static/js/2.771e7ed8.chunk.js.map": "/taco-nochero/static/js/2.771e7ed8.chunk.js.map",
     "static/js/3.d26f01e9.chunk.js": "/taco-nochero/static/js/3.d26f01e9.chunk.js",
     "static/js/3.d26f01e9.chunk.js.map": "/taco-nochero/static/js/3.d26f01e9.chunk.js.map",
     "index.html": "/taco-nochero/index.html",
     "static/css/main.d9164ae2.chunk.css.map": "/taco-nochero/static/css/main.d9164ae2.chunk.css.map",
-    "static/js/2.068d50d8.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.068d50d8.chunk.js.LICENSE.txt",
+    "static/js/2.771e7ed8.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.771e7ed8.chunk.js.LICENSE.txt",
     "static/media/Alambres.c81a356b.png": "/taco-nochero/static/media/Alambres.c81a356b.png",
     "static/media/Apple.79c23ff0.png": "/taco-nochero/static/media/Apple.79c23ff0.png",
     "static/media/Bebidas.1a610ff4.png": "/taco-nochero/static/media/Bebidas.1a610ff4.png",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ee6e97cd.js",
-    "static/js/2.068d50d8.chunk.js",
+    "static/js/2.771e7ed8.chunk.js",
     "static/css/main.d9164ae2.chunk.css",
-    "static/js/main.17b69b2b.chunk.js"
+    "static/js/main.a0a4331f.chunk.js"
   ]
 }
