@@ -28,7 +28,7 @@ export default function Chat({ messages, setMessages }) {
         <div className="fixed bottom-28 -right-0 md:-right-96">
             <div className="bg-gray-100 flex flex-wrap flex-col w-full md:w-1/2 h-96 rounded-md border">
                 <h2 className="h2-nochero text-center bg-nochero-300">
-                    ¿En que podemos ayudarte?
+                    ¿En qué podemos ayudarte?
                 </h2>
                 <div className="text-black overflow-y-scroll h-4/6">
                     <div className="flex flex-wrap flex-col">{messages}</div>

@@ -16,7 +16,7 @@ const SectionBody = () => {
                             Encuentra
                         </h1>
                         <h1 className="mb-5 text-5xl font-bold text-white">
-                            Tú comida favorita
+                            Tu comida favorita
                         </h1>
                         <p className="mb-5 text-white">
                             En un solo lugar, con precios accesibles y para toda la familia.
