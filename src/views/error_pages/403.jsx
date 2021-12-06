@@ -16,7 +16,7 @@ export default function Page403() {
           <TacoButton
             moreClasses="w-1/2 mx-auto"
             bgColor="300"
-            callBack={() => console.log("going to landing page")}
+            callBack={() => {}}
             text="Volver al inicio"
           />
           </Link>
