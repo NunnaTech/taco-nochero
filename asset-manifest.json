@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/taco-nochero/static/css/main.516db858.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.0ad6792f.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.0ad6792f.chunk.js.map",
+    "main.js": "/taco-nochero/static/js/main.a2e031b0.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.a2e031b0.chunk.js.map",
     "runtime-main.js": "/taco-nochero/static/js/runtime-main.ee6e97cd.js",
     "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.ee6e97cd.js.map",
     "static/js/2.068d50d8.chunk.js": "/taco-nochero/static/js/2.068d50d8.chunk.js",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.ee6e97cd.js",
     "static/js/2.068d50d8.chunk.js",
     "static/css/main.516db858.chunk.css",
-    "static/js/main.0ad6792f.chunk.js"
+    "static/js/main.a2e031b0.chunk.js"
   ]
 }
