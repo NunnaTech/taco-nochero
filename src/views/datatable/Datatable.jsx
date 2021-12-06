@@ -163,15 +163,14 @@ const Datatable = () => {
                                         )}
                                         <td align="center">{i.category}</td>
                                         <td align="center">
-                                            <Link
-                                                to="/taco-nochero/productDetail"
+                                            <button
                                                 className="btn space-x-2"
                                                 style={{
                                                     backgroundColor: "#F57C00",
                                                 }}
                                             >
                                                 Ver detalles
-                                            </Link>
+                                            </button>
                                             <button
                                                 className="btn  space-x-2"
                                                 style={{
