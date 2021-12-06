@@ -15,7 +15,7 @@ import ProductList from '../src/views/product_list/List'
 import Payment from '../src/views/payment_pages/payment_view'
 import Inbox from '../src/views/email_pages/confirmation_purchase'
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Switch,
     Route,
     Link
