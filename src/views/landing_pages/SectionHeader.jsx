@@ -26,7 +26,7 @@ const SectionHeader = () => {
                                 bgColor="400"
                                 moreClasses="font-semibold"
                                 callBack={() => {}}
-                                text="¡Registrate!"
+                                text="¡Regístrate!"
                             />
                         </Link>
                     </div>
