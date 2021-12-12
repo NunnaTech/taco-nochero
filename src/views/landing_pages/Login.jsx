@@ -101,7 +101,7 @@ export default function Login() {
                 <div
                     className="w-full h-20 md:h-full row-start-1 md:row-start-auto rounded-lg"
                     style={{
-                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47)`,
+                        background: `url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80)`,
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",

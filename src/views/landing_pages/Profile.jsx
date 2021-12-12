@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import TacoButton from "../../commons/TacoButton";
 import TacoInput from "../../commons/TacoInput";
 
 export default function Profile() {
+    const [cal, setCal] = useState("");
     return (
         <div className="w-full h-screen mx-auto flex justify-center place-items-center text-black">
             <div className="grid grid-col-1 md:grid-cols-2 w-full md:w-2/3">
@@ -54,12 +55,21 @@ export default function Profile() {
                             type="email"
                         />
                         <label htmlhtmlFor="pass">Contraseña:</label>
+                        <TacoInput type="password" placeholder="********" />
+
+                        <label htmlhtmlFor="birthday">
+                            Fecha de nacimiento:
+                        </label>
+                        
                         <TacoInput
-                            placeholder=""
-                            type="password"
-                            placeholder="********"
+                            placeholder="Fecha de nacimiento"
+                            id="birthday"
+                            type="date"
                             moreClasses="mb-8"
+                            data={cal}
+                            setData={setCal}
                         />
+
                         <TacoButton
                             bgColor="300"
                             moreClasses="font-semibold"

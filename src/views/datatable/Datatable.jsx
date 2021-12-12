@@ -42,8 +42,8 @@ const Datatable = () => {
     };
 
     return (
-        <>
-            <div className="navbar  shadow-lg px-5 text-neutral-content rounded-box py-5">
+        <div className="w-screen h-screen">
+            <div className="navbar shadow-lg px-5 text-neutral-content rounded-box py-5">
                 <div className="flex-none hidden lg:flex">
                     <img src={Logo} width="62" height="62" />
                 </div>
@@ -200,7 +200,7 @@ const Datatable = () => {
                 {renderButtons()}
                 <button className="btn">Next</button>
             </div>
-        </>
+        </div>
     );
 };
 
