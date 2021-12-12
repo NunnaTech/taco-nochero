@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/taco-nochero/static/css/main.516db858.chunk.css",
-    "main.js": "/taco-nochero/static/js/main.a2e031b0.chunk.js",
-    "main.js.map": "/taco-nochero/static/js/main.a2e031b0.chunk.js.map",
-    "runtime-main.js": "/taco-nochero/static/js/runtime-main.ee6e97cd.js",
-    "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.ee6e97cd.js.map",
-    "static/js/2.068d50d8.chunk.js": "/taco-nochero/static/js/2.068d50d8.chunk.js",
-    "static/js/2.068d50d8.chunk.js.map": "/taco-nochero/static/js/2.068d50d8.chunk.js.map",
-    "static/js/3.d26f01e9.chunk.js": "/taco-nochero/static/js/3.d26f01e9.chunk.js",
-    "static/js/3.d26f01e9.chunk.js.map": "/taco-nochero/static/js/3.d26f01e9.chunk.js.map",
+    "main.js": "/taco-nochero/static/js/main.6913b3bd.chunk.js",
+    "main.js.map": "/taco-nochero/static/js/main.6913b3bd.chunk.js.map",
+    "runtime-main.js": "/taco-nochero/static/js/runtime-main.bf84a50d.js",
+    "runtime-main.js.map": "/taco-nochero/static/js/runtime-main.bf84a50d.js.map",
+    "static/js/2.627db514.chunk.js": "/taco-nochero/static/js/2.627db514.chunk.js",
+    "static/js/2.627db514.chunk.js.map": "/taco-nochero/static/js/2.627db514.chunk.js.map",
+    "static/js/3.99e522f8.chunk.js": "/taco-nochero/static/js/3.99e522f8.chunk.js",
+    "static/js/3.99e522f8.chunk.js.map": "/taco-nochero/static/js/3.99e522f8.chunk.js.map",
     "index.html": "/taco-nochero/index.html",
     "static/css/main.516db858.chunk.css.map": "/taco-nochero/static/css/main.516db858.chunk.css.map",
-    "static/js/2.068d50d8.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.068d50d8.chunk.js.LICENSE.txt",
+    "static/js/2.627db514.chunk.js.LICENSE.txt": "/taco-nochero/static/js/2.627db514.chunk.js.LICENSE.txt",
     "static/media/Alambres.c81a356b.png": "/taco-nochero/static/media/Alambres.c81a356b.png",
     "static/media/Apple.79c23ff0.png": "/taco-nochero/static/media/Apple.79c23ff0.png",
     "static/media/Bebidas.1a610ff4.png": "/taco-nochero/static/media/Bebidas.1a610ff4.png",
@@ -39,9 +39,9 @@
     "static/media/wet_floor.e42c96e3.svg": "/taco-nochero/static/media/wet_floor.e42c96e3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee6e97cd.js",
-    "static/js/2.068d50d8.chunk.js",
+    "static/js/runtime-main.bf84a50d.js",
+    "static/js/2.627db514.chunk.js",
     "static/css/main.516db858.chunk.css",
-    "static/js/main.a2e031b0.chunk.js"
+    "static/js/main.6913b3bd.chunk.js"
   ]
 }
