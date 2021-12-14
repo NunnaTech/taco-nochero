@@ -50,7 +50,7 @@ Application with design UX/UI oriented a Mexican restaurant to our subject User 
     - Form elements
     - Wizzard
     - Pickers
-    - Validations → Las validaciones pueden tener programación
+    - Validations
     - Datatables
 - Dashboard
     - Charts
