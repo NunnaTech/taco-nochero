@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ADKAN-UTEZ/taco-nochero">
-    <img src="https://adkan-utez.github.io/taco-nochero/static/media/logo%202.9541ec68.png" alt="Logo" width="auto" height="200">
+    <img src="./src/assets/images/FullLogo.png" alt="Logo" width="auto" height="200">
   </a>
 
   <h3 align="center"><b>TACO NOCHERO</b> </h3>
@@ -27,7 +27,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://adkan-utez.github.io/taco-nochero/)
+[![Product Name Screen Shot][product-screenshot]](https://thepandadevs.github.io/taco-nochero/)
 
 Application with design UX/UI oriented a Mexican restaurant to our subject User experience, where you will find frames like:
 
@@ -113,4 +113,4 @@ This is an example of how to list things you need to use the software and how to
 [issues-shield]: https://img.shields.io/github/issues/ADKAN-UTEZ/taco-nochero.svg?style=for-the-badge
 [issues-url]: https://github.com/ADKAN-UTEZ/taco-nochero/issues
 [license-shield]: https://img.shields.io/github/license/ADKAN-UTEZ/taco-nochero.svg?style=for-the-badge
-[product-screenshot]: https://s3.aws-k8s.generated.photos/ai-generated-photos/upscaler-uploads/507/2b40a28a-859b-4c58-abb1-4354622c099f.png
+[product-screenshot]: ./src/assets/images/Mockups.png
